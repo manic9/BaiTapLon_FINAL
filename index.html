@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>CubeCraft Games - Community & Forums</title>
+  <!-- Font Awesome & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- <link rel="stylesheet" href="./lib/all.min.css">
+  <link rel="stylesheet" href="./lib/all.min1.css"> -->
+</head>
+
+<body>
+  <div class="forum-wrapper">
+    <!-- Header with logo + search -->
+    <div class="cl forum-header">
+      <div class="logo-area">
+        <h1><i class="fas fa-cube" style="color: #2B6EF0; margin-right: 6px;"></i> CubeCraft Games</h1>
+        <p>The original Minecraft server network</p>
+      </div>
+      <div class="header-right">
+        <div class="search-area">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search forums...">
+          <i class="fas fa-sliders-h" style="opacity: 0.6;"></i>
+        </div>
+        <div class="login-area">
+          <button>LOGIN</button>
+        </div>
+        <div class="register-area">
+          <button>REGISTER</button>
+        </div>
+      </div>
+      <!-- <div class="nav">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div> -->
+    </div>
+
+    <!-- Main grid: left content + right sidebar -->
+    <div class="forum-grid">
+      <!-- LEFT COLUMN: main feed -->
+      <div class="main-content">
+        <!-- Welcome Banner -->
+        <div class="welcome-card">
+          <h2>🎮 HERE TO PLAY MINECRAFT?</h2>
+          <p>Join and start playing on our Minecraft server now! Java & Bedrock crossplay, unique minigames, and a
+            vibrant community.</p>
+          <button class="btn-join" id="joinServerBtn"><i class="fab fa-minecraft"></i> play.cubecraft.net</button>
+        </div>
+
+        <!-- LATEST CUBECAP & NEWS LIST -->
+        <div class="cl news-list">
+          <div class="section-header">
+            <i class="fas fa-newspaper"></i> Latest announcements
+          </div>
+          <div class="news-item">
+            <div class="news-title">CubeCap - March 2026</div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i
+                  class="fas fa-calendar-alt"></i> Mar 31, 2026</span></div>
+          </div>
+          <div class="news-item">
+            <div class="news-title">CubeCap - February 2026</div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i
+                  class="fas fa-calendar-alt"></i> Mar 2, 2026</span></div>
+          </div>
+          <div class="news-item">
+            <div class="news-title">Lunar Event 2026!</div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i
+                  class="fas fa-calendar-alt"></i> Feb 9, 2026</span></div>
+          </div>
+          <div class="news-item">
+            <div class="news-title">CubeCap - January 2026</div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i
+                  class="fas fa-calendar-alt"></i> Feb 1, 2026</span></div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <a href="#" class="page active">1</a>
+          <a href="#" class="page">2</a>
+          <a href="#" class="page">3</a>
+          <span class="dots">...</span>
+          <a href="#" class="page">112</a>
+          <a href="#" class="next">Next ▸</a>
+        </div>
+
+        <!-- Main text block: Hello CubeCrafters + Goodbye Nether / Overworld -->
+        <!-- <div class="cl announcement-block">
+          <h3>👋 Hello CubeCrafters!</h3>
+          <p>We’re changing things up, starting fresh in 2026. CubeCraft Monthly content posts will no longer happen. We
+            intended for CubeCraft Monthly content drops to occur at the start of every month, with content released at
+            that time. We’ve released all the minor content we wanted, and we’re now getting to the bigger long-term
+            content drops, which means some months might not have big updates.</p>
+          <p>But we still want to give you a monthly post. Introducing <strong>CubeCap!</strong> - An end of month recap
+            of updates, events and other miscellaneous announcements to share with you. All your news in one place!</p>
+
+          <div class="highlight">
+            <i class="fas fa-fire" style="margin-right: 10px;"></i> <strong>Goodbye Nether... Hello Overworld!</strong>
+          </div>
+          <p>Now we all know the Free for All Nether map is not the most loved map. So it’s time to put out its flame.
+            But we don’t want to remove a map without adding a new one. Introducing <strong>Overworld!</strong> - Using
+            the foundations of Nether, we’ve ripped the roof off and converted it into an Overworld paradise. Available
+            on Java & Bedrock, check it out!</p>
+          <p style="margin-top: 12px; font-style: italic; background: #F8F2E7; padding: 12px; border-radius: 20px;">🌿
+            Overworld FFA is now live — explore lush forests, ancient ruins, and fight in the open air.</p>
+        </div> -->
+
+        <div class="cl announcement-block">
+          <div class="block-post">
+            <h2 class="block-header">
+              <a href="#">
+                Hypixel SkyBlock 0.24.3 - Abiphone Contact Bonanza, Littlefoot's Den, and More!
+              </a>
+              <span>
+                Mar 31, 2026
+              </span>
+            </h2>
+            <div class="block-image">
+              <img src="https://hypixel.net/attachments/banner-png.3557570/" alt="Hypixel SkyBlock 0.24.3 Update">
+              Hello! Today we are releasing Hypixel SkyBlock 0.24.3, an update which features a bunch of new Abiphone Contacts, the addition of Littlefoot's Den and many changes to Jerry Island, the official discontinuation of Reforge Anvils, and more! Keep reading for all the details!
+              <a href="#">Continue reading...</a>
+            </div>
+            <div class="block-footer">
+              <span>by Hypixel Team at 10:02 AM</span>
+              <span>1.2K Comments</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <a href="#" class="page active">1</a>
+          <a href="#" class="page">2</a>
+          <a href="#" class="page">3</a>
+          <span class="dots">...</span>
+          <a href="#" class="page">112</a>
+          <a href="#" class="next">Next ▸</a>
+        </div>
+      </div>
+
+
+      <!-- RIGHT SIDEBAR: all community widgets -->
+      <div class="sidebar">
+        <!-- Discord widget -->
+        <div class="widget">
+          <div class="cl widget-title">
+            <i class="fab fa-discord" style="color:#5865F2;"></i> DISCORD
+          </div>
+          <div class="widget-content">
+            <div class="discord-stats">
+              <i class="fab fa-discord fa-2x"></i>
+              <div style="font-weight: bold; margin: 6px 0;">Members Online</div>
+              <div style="font-size: 1.6rem; font-weight: 800;">1,247</div>
+              <div style="font-size: 0.75rem;">+ 3,200 online total</div>
+            </div>
+            <a href="#" class="discord-btn" id="discordBtn"><i class="fab fa-discord"></i> Join our Discord</a>
+          </div>
+        </div>
+
+        <!-- TEAM ONLINE widget -->
+        <div class="widget">
+          <div class="cl widget-title">
+            <i class="fas fa-users"></i> TEAM ONLINE
+          </div>
+          <div class="widget-content">
+            <div class="team-list">
+              <div class="team-member"><span><span class="online-dot"></span> Fesa</span><span
+                  class="role-badge">Quality Assurance</span></div>
+              <div class="team-member"><span><span class="online-dot"></span> Daanfkyy</span><span
+                  class="role-badge">Mod</span></div>
+              <div class="team-member"><span><span class="online-dot"></span> CKelting</span><span
+                  class="role-badge">Welfare Admin</span></div>
+              <div class="team-member"><span><span class="online-dot"></span> AliWarrior</span><span
+                  class="role-badge">Helper</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MEMBERS ONLINE -->
+        <div class="widget">
+          <div class="cl widget-title">
+            <i class="fas fa-user-friends"></i> MEMBERS ONLINE
+          </div>
+          <div class="widget-content">
+            <div class="username-cloud">
+              <span>x pmx 1</span> <span>muminek002</span> <span>xNqkkii</span> <span>BeastRudyy</span>
+              <span>Fesa</span> <span>Loskol</span> <span>DaanH</span> <span>Daanfkyy</span>
+              <span>TruePenguin</span> <span>CKelting</span> <span>AliWarrior</span> <span>SrMuerto7w7</span>
+            </div>
+            <div class="total-stats">
+              <i class="fas fa-chart-line"></i> Total: 1,349 (members: 13, guests: 1,336)
+            </div>
+          </div>
+        </div>
+
+        <!-- LATEST POSTS -->
+        <div class="widget">
+          <div class="cl widget-title">
+            <i class="fas fa-comment-dots"></i> LATEST POSTS
+          </div>
+          <div class="widget-content">
+            <div class="post-item">
+              <div class="post-category"><i class="fas fa-globe"></i> All Networks</div>
+              <div class="post-title">Change the LeaderBoard system</div>
+              <div class="post-meta">Latest: <strong>Loskol</strong> · 17 minutes ago</div>
+              <span class="forum-name">Feedback & Suggestions</span>
+            </div>
+            <div class="post-item">
+              <div class="post-category"><i class="fas fa-cube"></i> Bedrock</div>
+              <div class="post-title">MinerWare New <span
+                  style="background:#EFF3FF; padding:0 4px; border-radius:12px;">CubeCraft record</span></div>
+              <div class="post-meta">Latest: <strong>GG KING 1234576</strong> · Today at 3:39 PM</div>
+              <span class="forum-name">Game Discussions</span>
+            </div>
+            <div class="post-item">
+              <div class="post-category"><i class="fas fa-gamepad"></i> PLAYING SKYWARS</div>
+              <div class="post-title">BLINDFOLDED WITH A STEERING WHEEL</div>
+              <div class="post-meta">Latest: <strong>GG KING 1234576</strong> · Today at 3:15 PM</div>
+              <span class="forum-name">The Lobby</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- server IP quick reference -->
+        <div class="widget">
+          <div class="cl widget-title">
+            <i class="fas fa-server"></i> JOIN NOW
+          </div>
+          <div class="widget-content" style="text-align: center;">
+            <code
+              style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.cubecraft.net</code>
+            <p style="font-size: 0.7rem; margin-top: 12px;">Bedrock port: 19132 | Java 1.8-1.20+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <footer class="footer">
+    <div class="pageContent">
+      <div class="block">
+        <div class="block-container">
+          <h3>About us</h3>
+          <p>Founded in 2012, we're now one of the world's largest Minecraft Networks. Hosting fun and unique games like
+            SkyWars, Lucky Islands & EggWars!</p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-container">
+          <h3> Useful Links</h3>
+          <ul style="list-style: none;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Rules & Policies</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Manage Subscriptions</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="block login-area block-3">
+        <div class="block-container">
+          <h3>CubeCraft Store</h3>
+          <p>We work very hard to bring you unique, originally created content. Purchasing ranks, CubeCraft Gold, and
+            SkyBlock Gems helps support us in making more, higher quality content.</p>
+          <button style="margin: 20px 0px;">Visit the store</button>
+        </div>
+        <div class="social">
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-discord"></i>
+          <i class="fa-brands fa-threads"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="footer-note">
+    <i class="fas fa-cube"></i> CubeCraft Games — Community forums & server hub. Not an official Minecraft product.
+  </footer>
+  <div class="scrollButtons">
+    <button id="scrollUpBtn" title="Lên đầu trang">↑</button>
+    <button id="scrollDownBtn" title="Xuống cuối trang">↓</button>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
