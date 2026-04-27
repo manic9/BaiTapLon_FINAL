@@ -1,3 +1,17 @@
+// JavaScript for handling login and register modals
+function openLogin() {
+    document.getElementById("loginModal").style.display = "block";
+}
+
+function openRegister() {
+    document.getElementById("registerModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("loginModal").style.display = "none";
+    document.getElementById("registerModal").style.display = "none";
+}
+
 // Simple interactive feedback for buttons
 document.addEventListener('DOMContentLoaded', () => {
     const joinBtn = document.getElementById('joinServerBtn');
@@ -50,4 +64,5 @@ document.addEventListener('DOMContentLoaded', () => {
             behavior: 'smooth'
         });
     });
+
 });

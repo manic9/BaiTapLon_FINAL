@@ -1,0 +1,108 @@
+
+/* nền mờ */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+/* box form */
+.modal-box {
+    background: white;
+    width: 500px;
+    height: 450px;
+    margin: 100px auto;
+    padding: 32px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.modal-box h2 {
+    margin-bottom: 10px;
+    color: #1E2A47;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.modal-box p {
+    /* margin-bottom: 20px; */
+    color: #4A5568;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.modal-box button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #f49ac2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    height: 45px;
+}
+
+.modal-box button:hover {
+    background: #FF8C42;
+    transform: translateY(-2px);
+}
+
+.modal-box span {
+    color: #f49ac2;
+    cursor: pointer;
+}
+
+.register-link {
+    height: 610px;
+}
+
+/* nút đóng */
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    transition: color 0.2s;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* input */
+.modal-box input {
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.modal-box input:focus {
+    outline: none;
+    border-color: #2B6EF0;
+    box-shadow: 0 0 5px rgba(43, 110, 240, 0.2);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    color: #4A5568;
+    font-size: 0.9rem;
+    text-align: left; 
+}
