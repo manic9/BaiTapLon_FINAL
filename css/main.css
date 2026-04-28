@@ -34,16 +34,12 @@ li {
     position: relative;
 }
 
-.cl {
-    background-color: #e1f6ff !important;
-}
-
 /* header */
 .forum-header {
-    background: #FFFFFF;
+    background: rgba(225, 246, 255, 0.6);
     border-radius: 24px;
     padding: 14px 28px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
@@ -53,6 +49,8 @@ li {
     position: sticky;
     top: 0px;
     transition: 0.4s;
+    backdrop-filter: blur(10px);
+    z-index: 100;
 }
 
 .forum-header.sticky-active {
@@ -213,11 +211,14 @@ li {
 
 /* welcome card */
 .welcome-card {
-    background: linear-gradient(115deg, #1E2A47 0%, #14213D 100%);
+    background: url(https://forums.cubecraftcdn.com/xenforo/serve/styles/cubecraft/cubecraft/welcome-play.png);
     border-radius: 28px;
     padding: 32px 28px;
     color: white;
     box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.2);
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .welcome-card h2 {
@@ -637,6 +638,7 @@ li {
     min-height: 500px;
     padding: 16px;
     min-width: 300px;
+    gap: 0;
 }
 
 .block:last-child {
