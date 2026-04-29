@@ -12,6 +12,10 @@ function closeModal() {
     document.getElementById("registerModal").style.display = "none";
 }
 
+function copyIP() {
+    navigator.clipboard.writeText("play.hdhcraft.net");
+    alert("Đã copy IP!");
+}
 // Simple interactive feedback for buttons
 document.addEventListener('DOMContentLoaded', () => {
     const joinBtn = document.getElementById('joinServerBtn');

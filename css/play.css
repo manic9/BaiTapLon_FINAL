@@ -1,0 +1,92 @@
+.page-content {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    width: 850px;
+}
+
+.page-content h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 42px;
+    font-family: proxima-nova, sans-serif;
+}
+
+/* layout 2 cột */
+.play-page {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+/* LEFT */
+.left {
+    flex: 1;
+    text-align: center;
+}
+
+.ip-box {
+    background: #eef1f4;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.copy-btn {
+    background: #f4b942;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.copy-btn:hover {
+    background: #e0a833;
+}
+
+/* RIGHT */
+.right {
+    flex: 1;
+}
+
+.desc {
+    margin-bottom: 20px;
+}
+
+.desc span {
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* step */
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* footer */
+.footer-text {
+    text-align: center;
+    margin-top: 40px;
+    color: #4a5c6a;
+    font-size: 30px !important;
+}
