@@ -180,23 +180,23 @@ li {
 }
 
 .card-1 {
-    background-image: url(https://forums.cubecraftcdn.com/xenforo/data/thfeature/feature_backgrounds/0/666.jpg);
+    background-image: url(../img/card-1.jpg);
 }
 
 .card-2 {
-    background-image: url(https://forums.cubecraftcdn.com/xenforo/data/thfeature/feature_backgrounds/0/665.jpg);
+    background-image: url(../img/card-2.jpg);
 }
 
 .card-3 {
-    background-image: url(https://forums.cubecraftcdn.com/xenforo/data/thfeature/feature_backgrounds/0/664.jpg);
+    background-image: url(../img/card-3.jpg);
 }
 
 .card-4 {
-    background-image: url(https://forums.cubecraftcdn.com/xenforo/data/thfeature/feature_backgrounds/0/663.jpg);
+    background-image: url(../img/card-4.jpg);
 }
 
 .card-5 {
-    background-image: url(https://forums.cubecraftcdn.com/xenforo/data/thfeature/feature_backgrounds/0/662.jpg);
+    background-image: url(../img/card-5.jpg);
 }
 
 .entry-header h3 {
@@ -211,7 +211,7 @@ li {
 
 /* welcome card */
 .welcome-card {
-    background: url(https://forums.cubecraftcdn.com/xenforo/serve/styles/cubecraft/cubecraft/welcome-play.png);
+    background: url(../img/welcome-play.png);
     border-radius: 28px;
     padding: 32px 28px;
     color: white;
@@ -316,13 +316,16 @@ li {
     padding: 8px 12px;
     border-radius: 50%;
     transition: 0.3s;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .page.active {
     background: linear-gradient(45deg, #ff7eb3, #ff758c);
     color: white;
-    width: 35px;
-    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
