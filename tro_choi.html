@@ -10,9 +10,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- External CSS -->
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/login_register.css">
-  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/login_register.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/play.css">
   <!-- <link rel="stylesheet" href="./lib/all.min.css">
   <link rel="stylesheet" href="./lib/all.min1.css"> -->
 </head>
@@ -22,7 +23,7 @@
     <!-- Header with logo + search -->
     <div class="forum-header">
       <div class="logo-area">
-        <h1>CubeCraft Games</h1>
+        <h1><i class="fas fa-cube" style="color: #2B6EF0; margin-right: 6px;"></i> CubeCraft Games</h1>
         <p>The original Minecraft server network</p>
       </div>
       <div class="header-right">
@@ -89,225 +90,58 @@
     <div class="forum-grid">
       <!-- LEFT COLUMN: main feed -->
       <div class="main-content">
-
         <!-- Navigation Menu -->
         <nav class="nav-bar">
           <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="./play/play.html">Play</a></li>
+            <li><a href="trang_chu.html">Home</a></li>
+            <li><a href="tro_choi.html">Play</a></li>
             <li><a href="#">Forums</a></li>
             <li><a href="#">Rules</a></li>
             <li><a href="#">Vote</a></li>
-            <li><a href="#">Support</a></li>
+            <li><a href="ho_tro.html">Support</a></li>
             <li><a href="#">Store</a></li>
           </ul>
         </nav>
 
-        <!-- Welcome Banner -->
-        <div class="welcome-card">
-          <h2>🎮 HERE TO PLAY MINECRAFT?</h2>
-          <p>Join and start playing on our Minecraft server now! Java & Bedrock crossplay, unique minigames, and a
-            vibrant community.</p>
-          <button class="btn-join" id="joinServerBtn"><i class="fab fa-minecraft"></i> play.cubecraft.net</button>
-        </div>
+        <div class="announcement-block">
+          <div class="page-content">
+            <h2>How to Play</h2>
+            <div class="play-page">
+              <!-- LEFT -->
+              <div class="left">
+                <div class="ip-box">PLAY.HDHCRAFT.NET</div>
+                <button onclick="copyIP()" class="copy-btn">📋 Click to Copy IP</button>
+              </div>
+              <!-- RIGHT -->
+              <div class="right">
+                <p class="desc">
+                    Join HDHCRAFT right now to play with <span>564</span>
+                    others on any of our amazing gamemodes.
+                    <br>
+                    <br>
+                    To join:
+                </p>
 
-        <!-- Gird block -->
-        <div class="feature-grid">
-          <div class="grid-block">
-            <div class="grid-item grid-big card card-1">
-              <div class="entry-header">
-                <h3 style="font-size: 32px; margin-bottom: 12px;">Unique Games</h3>
-                <p>rubik_cube_man Friday at 11:43 PM</p>
+                <div class="step">
+                    <div class="circle">#1</div>
+                    <p>Launch <b>Minecraft: Java Edition</b> and press the <b>Multiplayer</b> button.</p>
+                </div>
+
+                <div class="step">
+                    <div class="circle">#2</div>
+                    <p>Click on <b>Add Server</b> and enter whatever you like in the <b>Server Name</b>.</p>
+                </div>
+
+                <div class="step">
+                    <div class="circle">#3</div>
+                    <p>Copy the server IP and paste it into the <b>Server Address</b>.</p>
+                </div>
               </div>
             </div>
-
-            <div class="grid-item grid-small card card-2">
-              <div class="entry-header">
-                <h3>CubeCap - March 2026</h3>
-                <p>Camezonda Mar 31, 2026</p> 
-              </div>
-            </div>
-
-            <div class="grid-item grid-small card card-3">
-              <div class="entry-header">
-                <h3>🌸 Spring Event 2026!</h3>
-                <p>Unstrafeless Mar 26, 2026</p>
-              </div>
-            </div>
-
-            <div class="grid-item grid-small card card-4">
-              <div class="entry-header">
-                <h3>🐈 Cat Bundle & Maps</h3>
-                <p>Clarky Mar 13, 2026</p>
-              </div>
-            </div>
-
-            <div class="grid-item grid-small card card-5">
-              <div class="entry-header">
-                <h3>CubeCap - February 2026</h3>
-                <p>CubeCap - February 2026</p>
-              </div>
-            </div>
+            <h2 class="footer-text">Congratulations, you are now ready to join HDHCraft!</h2>
           </div>
-        </div>
-
-        <!-- LATEST CUBECAP & NEWS LIST -->
-        <div class="cl news-list">
-          <div class="section-header">
-            <i class="fas fa-newspaper"></i> Latest announcements
-          </div>
-          <div class="news-item">
-            <div class="news-title">CubeCap - March 2026</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i
-                  class="fas fa-calendar-alt"></i> Mar 31, 2026</span></div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">CubeCap - February 2026</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i
-                  class="fas fa-calendar-alt"></i> Mar 2, 2026</span></div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">Lunar Event 2026!</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i
-                  class="fas fa-calendar-alt"></i> Feb 9, 2026</span></div>
-          </div>
-          <div class="news-item">
-            <div class="news-title">CubeCap - January 2026</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i
-                  class="fas fa-calendar-alt"></i> Feb 1, 2026</span></div>
-          </div>
-        </div>
-
-        <div class="pagination">
-          <a href="index.html" class="page active">1</a>
-          <a href="./post/post2.html" class="page">2</a>
-          <a href="#" class="page">3</a>
-          <a href="#" class="page">4</a>
-          <a href="./post/post2.html" class="next">Next ▸</a>
-        </div>
-
-        <div class="cl announcement-block">
-          <div class="block-post">
-            <h2 class="block-header">
-              <a href="#">
-                Hypixel SkyBlock 0.24.3 - Abiphone Contact Bonanza, Littlefoot's Den, and More!
-              </a>
-              <span>
-                Mar 31, 2026
-              </span>
-            </h2>
-            <div class="block-image">
-              <img src="./img/100/101.png" alt="Hypixel SkyBlock 0.24.3 - Abiphone Contact Bonanza, Littlefoot's Den, and More!">
-              Hello! Today we are releasing Hypixel SkyBlock 0.24.3, an update which features a bunch of new Abiphone Contacts, the addition of Littlefoot's Den and many changes to Jerry Island, the official discontinuation of Reforge Anvils, and more! Keep reading for all the details!
-              <a href="#">Continue reading...</a>
-            </div>
-            <div class="block-footer">
-              <span>by Hypixel Team at 10:02 AM</span>
-              <span>581 Comments</span>
-            </div>
-          </div>
-
-          <div class="block-post">
-            <h2 class="block-header">
-              <a href="#">
-                Hypixel's 13th Anniversary + Easter Event
-              </a>
-              <span>
-                Mar 30, 2026
-              </span>
-            </h2>
-            <div class="block-image">
-              <img src="./img/100/102.png" alt="Hypixel's 13th Anniversary + Easter Event">
-              We're coming up on the Hypixel Network's 13th anniversary! To celebrate we've got a set of new Bingo Cards along with all of our usual Easter Event happenings. Here's a TLDR of everything:
-              <ul class="event-list">
-                <li>EASTER SALE - Up to 85% off!</li>
-                <li>New Bingo Cards</li>
-                <li>New Bingo Shop Cosmetics</li>
-                <li>New Easter Maps</li>
-                <li>New Main Lobby Egg Hunt</li>
-                <li>New Event Shop Cosmetics</li>
-              </ul>
-              <a href="#">Continue reading...</a>
-            </div>
-            <div class="block-footer">
-              <span>by Hypixel Team at 1:20 PM</span>
-              <span>81 Comments</span>
-            </div>
-          </div>
-
-          <div class="block-post">
-            <h2 class="block-header">
-              <a href="#">
-                Build Battle Update - Platinum Palette, Minecraft 1.21.9, and more!
-              </a>
-              <span>
-                Mar 4, 2026
-              </span>
-            </h2>
-            <div class="block-image">
-              <img src="./img/100/103.png" alt="Build Battle Update - Platinum Palette, Minecraft 1.21.9, and more!">
-              Hello! 
-              <br>
-              <br>
-              Today we've got a small Build Battle update for you, featuring the PLATINUM PALETTE (it's a small revamp to the Emblems system). We've also raised the minimum version to Minecraft 1.21.9 for core modes of Build Battle and have made a handful of QOL changes.
-              <a href="#">Continue reading...</a>
-            </div>
-            <div class="block-footer">
-              <span>by Hypixel Team at 10:10 AM</span>
-              <span>443 Comments</span>
-            </div>
-          </div>
-
-          <div class="block-post">
-            <h2 class="block-header">
-              <a href="#">
-                Hypixel SkyBlock 0.24.2 - Hub Revamp, Latest Minecraft, Year of the Witch, and more!
-              </a>
-              <span>
-                Feb 24, 2026
-              </span>
-            </h2>
-            <div class="block-image">
-              <img src="./img/100/104.png" alt="Hypixel SkyBlock 0.24.2 - Hub Revamp, Latest Minecraft, Year of the Witch, and more!">
-              Hello! As of today joining Hypixel SkyBlock will require you to be on at least Minecraft version 1.21.9 or above. This is a major step forward for the game and we're excited about what's coming in the not-too-distant future for Hypixel SkyBlock! This update also includes a revamp to The Hub, a new Year of the Witch event, a restructured Museum, an RNG Meter for Frozen Corpses, the end-of-life update for Stranded, and much more. Keep reading to learn all of the details!
-              <a href="#">Continue reading...</a>
-            </div>
-            <div class="block-footer">
-              <span>by Hypixel Team at 12:54 PM</span>
-              <span>194 Comments</span>
-            </div>
-          </div>
-
-          <div class="block-post">
-            <h2 class="block-header">
-              <a href="#">
-                Happy Lunar New Year - Year of the Horse!
-              </a>
-              <span>
-                Feb 16, 2026
-              </span>
-            </h2>
-            <div class="block-image">
-              <img src="./img/100/105.png" alt="Happy Lunar New Year - Year of the Horse!">
-              Happy New Year! Tonight marks the start of the Year of the Fire Horse. We've added some new maps and cosmetics to various games on the network to celebrate! Read on for more details.
-              <a href="#">Continue reading...</a>
-            </div>
-            <div class="block-footer">
-              <span>by Hypixel Team at 9:24 AM</span>
-              <span>20 Comments</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="pagination">
-          <a href="index.html" class="page active">1</a>
-          <a href="./post/post2.html" class="page">2</a>
-          <a href="#" class="page">3</a>
-          <a href="#" class="page">4</a>
-          <a href="./post/post2.html" class="next">Next ▸</a>
         </div>
       </div>
-
 
       <!-- RIGHT SIDEBAR: all community widgets -->
       <div class="sidebar">
@@ -398,7 +232,7 @@
           </div>
           <div class="widget-content" style="text-align: center;">
             <code
-              style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.cubecraft.net</code>
+              style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.hdhcraft.net</code>
             <p style="font-size: 0.7rem; margin-top: 12px;">Bedrock port: 19132 | Java 1.8-1.20+</p>
           </div>
         </div>
@@ -457,5 +291,5 @@
     <button id="scrollUpBtn" title="Lên đầu trang">↑</button>
     <button id="scrollDownBtn" title="Xuống cuối trang">↓</button>
   </div>
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>

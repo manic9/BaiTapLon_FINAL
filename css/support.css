@@ -1,0 +1,30 @@
+.card-body {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.card-body h2 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    font-size: 26px;
+    color: #34ADF1;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.card-body p {
+    padding-bottom: 20px;
+}
+
+.card-body hr {
+    border: none;
+    height: 2px;
+    background: #ECF1F6;
+    margin: 20px 0;
+}
+
+.text-color {
+    color: #34ADF1;
+}
