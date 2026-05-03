@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- External CSS -->
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/login_register.css">
-  <link rel="stylesheet" href="../css/nav.css">
-  <link rel="stylesheet" href="../css/play.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/login_register.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/play.css">
   <!-- <link rel="stylesheet" href="./lib/all.min.css">
   <link rel="stylesheet" href="./lib/all.min1.css"> -->
 </head>
@@ -23,7 +23,7 @@
     <!-- Header with logo + search -->
     <div class="forum-header">
       <div class="logo-area">
-        <h1><i class="fas fa-cube" style="color: #2B6EF0; margin-right: 6px;"></i> CubeCraft Games</h1>
+        <h1>CubeCraft Games</h1>
         <p>The original Minecraft server network</p>
       </div>
       <div class="header-right">
@@ -94,12 +94,12 @@
         <nav class="nav-bar">
           <ul class="nav-menu">
             <li><a href="trang_chu.html">Home</a></li>
-            <li><a href="tro_choi.html">Play</a></li>
-            <li><a href="#">Forums</a></li>
-            <li><a href="#">Rules</a></li>
-            <li><a href="#">Vote</a></li>
+            <li class="active"><a class="nav-link" href="tro_choi.html">Play</a></li>
+            <li><a href="bang_xep_hang.html">Leaderboards</a></li>
+            <li><a href="quy_dinh.html">Rules</a></li>
+            <li><a href="binh_chon.html">Vote</a></li>
             <li><a href="ho_tro.html">Support</a></li>
-            <li><a href="#">Store</a></li>
+            <li><a href="cua_hang.html">Store</a></li>
           </ul>
         </nav>
 
@@ -147,25 +147,20 @@
       <div class="sidebar">
         <!-- Discord widget -->
         <div class="widget">
-          <div class="cl widget-title">
-            <i class="fab fa-discord" style="color:#5865F2;"></i> DISCORD
-          </div>
+          <div class="widget-title">DISCORD</div>
           <div class="widget-content">
             <div class="discord-stats">
-              <i class="fab fa-discord fa-2x"></i>
               <div style="font-weight: bold; margin: 6px 0;">Members Online</div>
               <div style="font-size: 1.6rem; font-weight: 800;">1,247</div>
               <div style="font-size: 0.75rem;">+ 3,200 online total</div>
             </div>
-            <a href="#" class="discord-btn" id="discordBtn"><i class="fab fa-discord"></i> Join our Discord</a>
+            <a href="#" class="discord-btn" id="discordBtn">Join our Discord</a>
           </div>
         </div>
 
         <!-- TEAM ONLINE widget -->
         <div class="widget">
-          <div class="cl widget-title">
-            <i class="fas fa-users"></i> TEAM ONLINE
-          </div>
+          <div class="widget-title">TEAM ONLINE</div>
           <div class="widget-content">
             <div class="team-list">
               <div class="team-member"><span><span class="online-dot"></span> Fesa</span><span
@@ -182,9 +177,7 @@
 
         <!-- MEMBERS ONLINE -->
         <div class="widget">
-          <div class="cl widget-title">
-            <i class="fas fa-user-friends"></i> MEMBERS ONLINE
-          </div>
+          <div class="widget-title">MEMBERS ONLINE</div>
           <div class="widget-content">
             <div class="username-cloud">
               <span>x pmx 1</span> <span>muminek002</span> <span>xNqkkii</span> <span>BeastRudyy</span>
@@ -197,42 +190,12 @@
           </div>
         </div>
 
-        <!-- LATEST POSTS -->
-        <div class="widget">
-          <div class="cl widget-title">
-            <i class="fas fa-comment-dots"></i> LATEST POSTS
-          </div>
-          <div class="widget-content">
-            <div class="post-item">
-              <div class="post-category"><i class="fas fa-globe"></i> All Networks</div>
-              <div class="post-title">Change the LeaderBoard system</div>
-              <div class="post-meta">Latest: <strong>Loskol</strong> · 17 minutes ago</div>
-              <span class="forum-name">Feedback & Suggestions</span>
-            </div>
-            <div class="post-item">
-              <div class="post-category"><i class="fas fa-cube"></i> Bedrock</div>
-              <div class="post-title">MinerWare New <span
-                  style="background:#EFF3FF; padding:0 4px; border-radius:12px;">CubeCraft record</span></div>
-              <div class="post-meta">Latest: <strong>GG KING 1234576</strong> · Today at 3:39 PM</div>
-              <span class="forum-name">Game Discussions</span>
-            </div>
-            <div class="post-item">
-              <div class="post-category"><i class="fas fa-gamepad"></i> PLAYING SKYWARS</div>
-              <div class="post-title">BLINDFOLDED WITH A STEERING WHEEL</div>
-              <div class="post-meta">Latest: <strong>GG KING 1234576</strong> · Today at 3:15 PM</div>
-              <span class="forum-name">The Lobby</span>
-            </div>
-          </div>
-        </div>
-
         <!-- server IP quick reference -->
         <div class="widget">
-          <div class="cl widget-title">
-            <i class="fas fa-server"></i> JOIN NOW
-          </div>
+          <div class="widget-title">JOIN NOW</div>
           <div class="widget-content" style="text-align: center;">
             <code
-              style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.hdhcraft.net</code>
+              style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.cubecraft.net</code>
             <p style="font-size: 0.7rem; margin-top: 12px;">Bedrock port: 19132 | Java 1.8-1.20+</p>
           </div>
         </div>

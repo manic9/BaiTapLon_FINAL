@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>CubeCraft Games - Community & Forums</title>
+  <!-- Font Awesome & Google Fonts -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/login_register.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/play.css">
+  <link rel="stylesheet" href="./css/bang_xep_hang.css">
+  <!-- <link rel="stylesheet" href="./lib/all.min.css">
+  <link rel="stylesheet" href="./lib/all.min1.css"> -->
+</head>
+
+<body>
+  <div class="forum-wrapper">
+    <!-- Header with logo + search -->
+    <div class="forum-header">
+      <div class="logo-area">
+        <h1>CubeCraft Games</h1>
+        <p>The original Minecraft server network</p>
+      </div>
+      <div class="header-right">
+        <div class="search-area">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search forums...">
+          <i class="fas fa-sliders-h" style="opacity: 0.6;"></i>
+        </div>
+        <div class="login-area">
+          <button onclick="openLogin()">LOGIN</button>
+        </div>
+        <div class="register-area">
+          <button onclick="openRegister()">REGISTER</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOGIN -->
+    <div id="loginModal" class="modal">
+        <div class="modal-box">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Đăng nhập</h2>
+          <p>Vui lòng đăng nhập để tiếp tục. <span>Quên mật khẩu?</span></p>
+          <form action="login">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Your@email.com">
+            <label for="password">Mật khẩu</label>
+            <input type="password" placeholder="Mật khẩu của bạn">
+            <button>Đăng nhập</button>
+            <p style="margin-top: 10px; text-align: center;">Hoặc</p>
+            <button style="background: #5865f2; margin-top: 10px;">Tiếp tục với Discord</button>
+            <p style="margin-top: 10px; text-align: center;">Chưa có tài khoản? <span>Đăng ký</span></p>
+          </form>
+       </div>
+    </div>
+
+    <!-- REGISTER -->
+    <div id="registerModal" class="modal">
+        <div class="modal-box register-link">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Đăng ký</h2>
+            <p>Bạn đã có tài khoản? <span>Đăng nhập</span></p>
+            <form action="register">
+              <label for="email">Email</label>
+              <input type="email" placeholder="your@email.com">
+              <label for="username">Tên hiển thị</label>
+              <input type="text" placeholder="Nhập tên hiển thị của bạn">
+              <label for="password">Mật khẩu</label>
+              <input type="password" placeholder="Mật khẩu của bạn">
+              <label for="check-password">Xác nhận mẩ khẩu</label>
+              <input type="password" placeholder="Nhập lại mật khẩu">
+              <div style="display: flex; align-items: center; gap: 8px; margin-top: 12px;">
+                <input type="checkbox" id="terms" style="cursor: pointer; width: 16px; height: 16px;">
+                <label for="terms" style="font-size: 12px; margin: 0; cursor: pointer;">Tôi dồng ý với <a href="#"><span>Điều khoản dịch vụ</span></a> và <a href="#"><span>Chính sách bảo mật</span></a></label>
+              </div>
+              <button>Đăng ký</button>
+              <p style="margin-top: 10px; text-align: center;">Hoặc</p>
+              <button style="background: #5865f2; margin-top: 10px;">Tiếp tục với Discord</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main grid: left content + right sidebar -->
+    <div class="forum-grid">
+      <!-- LEFT COLUMN: main feed -->
+      <div class="main-content">
+        <!-- Navigation Menu -->
+        <nav class="nav-bar">
+          <ul class="nav-menu">
+            <li><a href="trang_chu.html">Home</a></li>
+            <li><a href="tro_choi.html">Play</a></li>
+            <li class="active"><a class="nav-link" href="bang_xep_hang.html">Leaderboards</a></li>
+            <li><a href="quy_dinh.html">Rules</a></li>
+            <li><a href="binh_chon.html">Vote</a></li>
+            <li><a href="ho_tro.html">Support</a></li>
+            <li><a href="cua_hang.html">Store</a></li>
+          </ul>
+        </nav>
+
+        <div class="announcement-block">
+          <div class="page-content">
+            <h2>Leaderboards</h2>
+            <div class="card-body">
+              <ul class="playerwall">
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/BedWars-44.png" alt="1">
+                    <div class="playerInfo">
+                      <div class="username">Bed Wars</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/Skywars-44.png" alt="2">
+                    <div class="playerInfo">
+                      <div class="username">Sky Wars</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/MurderMystery-44.png" alt="3">
+                    <div class="playerInfo">
+                      <div class="username">Murder Mystery</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/Arcade-44.png" alt="4">
+                    <div class="playerInfo">
+                      <div class="username">Arcade Games</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/UHC-44.png" alt="5">
+                    <div class="playerInfo">
+                      <div class="username">UHC Champions</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/Arena-44.png" alt="6">
+                    <div class="playerInfo">
+                      <div class="username">Arena Brawl</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/BuildBattle-44.png" alt="7">
+                    <div class="playerInfo">
+                      <div class="username">Build Battle</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/CVC-44.png" alt="8">
+                    <div class="playerInfo">
+                      <div class="username">Cops and Crims</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/Duels-44.png" alt="9">
+                    <div class="playerInfo">
+                      <div class="username">Duels</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/MegaWalls-44.png" alt="10">
+                    <div class="playerInfo">
+                      <div class="username">Mega Walls</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/Paintball-44.png" alt="11">
+                    <div class="playerInfo">
+                      <div class="username">Paintball Warfare</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/Quakecraft-44.png" alt="12">
+                    <div class="playerInfo">
+                      <div class="username">Quakecraft</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/SG-44.png" alt="13">
+                    <div class="playerInfo">
+                      <div class="username">Blitz Survival Games</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/SmashHeroes-44.png" alt="14">
+                    <div class="playerInfo">
+                      <div class="username">Smash Heroes</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/TNT-44.png" alt="14">
+                    <div class="playerInfo">
+                      <div class="username">TNT Wizards</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/TNT-44.png" alt="15">
+                    <div class="playerInfo">
+                      <div class="username">TNT Run</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/TNT-44.png" alt="16">
+                    <div class="playerInfo">
+                      <div class="username">PVP Run</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/TNT-44.png" alt="17">
+                    <div class="playerInfo">
+                      <div class="username">Bow Spleef</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/TNT-44.png" alt="18">
+                    <div class="playerInfo">
+                      <div class="username">TNT Tag</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/TurboKartRacers-44.png" alt="19">
+                    <div class="playerInfo">
+                      <div class="username">Turbo Kart Racers</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/VampireZ-44.png" alt="20">
+                    <div class="playerInfo">
+                      <div class="username">VampireZ</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/Walls-44.png" alt="21">
+                    <div class="playerInfo">
+                      <div class="username">The Walls</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/Warlords-44.png" alt="22">
+                    <div class="playerInfo">
+                      <div class="username">Warlords</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/WoolGames-44.png" alt="23">
+                    <div class="playerInfo">
+                      <div class="username">Wool Wars</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/WoolGames-44.png" alt="24">
+                    <div class="playerInfo">
+                      <div class="username">Sheep Wars</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="tooltipstered">
+                  <a href="#">
+                    <img src="./img/game-icon/WoolGames-44.png" alt="25">
+                    <div class="playerInfo">
+                      <div class="username">Capture the Wool</div>
+                      <div class="game">Leaderboards</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDEBAR: all community widgets -->
+      <div class="sidebar">
+        <!-- Discord widget -->
+        <div class="widget">
+          <div class="widget-title">DISCORD</div>
+          <div class="widget-content">
+            <div class="discord-stats">
+              <div style="font-weight: bold; margin: 6px 0;">Members Online</div>
+              <div style="font-size: 1.6rem; font-weight: 800;">1,247</div>
+              <div style="font-size: 0.75rem;">+ 3,200 online total</div>
+            </div>
+            <a href="#" class="discord-btn" id="discordBtn">Join our Discord</a>
+          </div>
+        </div>
+
+        <!-- TEAM ONLINE widget -->
+        <div class="widget">
+          <div class="widget-title">TEAM ONLINE</div>
+          <div class="widget-content">
+            <div class="team-list">
+              <div class="team-member"><span><span class="online-dot"></span> Fesa</span><span
+                  class="role-badge">Quality Assurance</span></div>
+              <div class="team-member"><span><span class="online-dot"></span> Daanfkyy</span><span
+                  class="role-badge">Mod</span></div>
+              <div class="team-member"><span><span class="online-dot"></span> CKelting</span><span
+                  class="role-badge">Welfare Admin</span></div>
+              <div class="team-member"><span><span class="online-dot"></span> AliWarrior</span><span
+                  class="role-badge">Helper</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MEMBERS ONLINE -->
+        <div class="widget">
+          <div class="widget-title">MEMBERS ONLINE</div>
+          <div class="widget-content">
+            <div class="username-cloud">
+              <span>x pmx 1</span> <span>muminek002</span> <span>xNqkkii</span> <span>BeastRudyy</span>
+              <span>Fesa</span> <span>Loskol</span> <span>DaanH</span> <span>Daanfkyy</span>
+              <span>TruePenguin</span> <span>CKelting</span> <span>AliWarrior</span> <span>SrMuerto7w7</span>
+            </div>
+            <div class="total-stats">
+              <i class="fas fa-chart-line"></i> Total: 1,349 (members: 13, guests: 1,336)
+            </div>
+          </div>
+        </div>
+
+        <!-- server IP quick reference -->
+        <div class="widget">
+          <div class="widget-title">JOIN NOW</div>
+          <div class="widget-content" style="text-align: center;">
+            <code
+              style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.cubecraft.net</code>
+            <p style="font-size: 0.7rem; margin-top: 12px;">Bedrock port: 19132 | Java 1.8-1.20+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="pageContent">
+      <div class="block">
+        <div class="block-container">
+          <h3>About us</h3>
+          <p>Founded in 2012, we're now one of the world's largest Minecraft Networks. Hosting fun and unique games like
+            SkyWars, Lucky Islands & EggWars!</p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-container">
+          <h3> Useful Links</h3>
+          <ul style="list-style: none;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Rules & Policies</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Manage Subscriptions</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="block login-area block-3">
+        <div class="block-container">
+          <h3>CubeCraft Store</h3>
+          <p>We work very hard to bring you unique, originally created content. Purchasing ranks, CubeCraft Gold, and
+            SkyBlock Gems helps support us in making more, higher quality content.</p>
+          <button style="margin: 20px 0px;">Visit the store</button>
+        </div>
+        <div class="social">
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-discord"></i>
+          <i class="fa-brands fa-threads"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="footer-note">
+    <i class="fas fa-cube"></i> CubeCraft Games — Community forums & server hub. Not an official Minecraft product.
+  </footer>
+  <div class="scrollButtons">
+    <button id="scrollUpBtn" title="Lên đầu trang">↑</button>
+    <button id="scrollDownBtn" title="Xuống cuối trang">↓</button>
+  </div>
+  <script src="../js/script.js"></script>
+</body>

@@ -1,0 +1,48 @@
+.playerwall {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 66px);
+    grid-gap: 10px;
+    height: 500px;
+    height: fit-content;
+}
+
+.playerwall li {
+    list-style: none;
+    box-sizing: border-box;
+    height: 66px;
+    border: 0;
+    margin-bottom: 0;
+    background: #a4def2;
+    border-radius: 5px;
+}
+
+.tooltipstered a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.tooltipstered a img {
+    margin: 0 10px 0 3px;
+    border-radius: 3px;
+}
+
+.username {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+    color: #c49a7c;
+}
+
+.game {
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    color: #777777;
+}
+
+.playerwall li:hover {
+    opacity: 0.8;
+}
+
