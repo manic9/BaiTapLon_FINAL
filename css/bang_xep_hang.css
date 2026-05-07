@@ -1,7 +1,7 @@
 .playerwall {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7, 66px);
+    grid-template-rows: repeat(auto, 66px);
     grid-gap: 10px;
     height: 500px;
     height: fit-content;
@@ -13,8 +13,8 @@
     height: 66px;
     border: 0;
     margin-bottom: 0;
-    background: #a4def2;
-    border-radius: 5px;
+    background: #c2eaf9;
+    border-radius: 10px;
 }
 
 .tooltipstered a {
