@@ -639,6 +639,14 @@ li {
     height: 54px;
 }
 
+.useful_links {
+    list-style: none;
+}
+
+.useful_links li:hover {
+    background: #98d2e6;
+}
+
 .fa-youtube { background: red; }
 .fa-twitter { background: #1da1f2; }
 .fa-tiktok { background: black; }

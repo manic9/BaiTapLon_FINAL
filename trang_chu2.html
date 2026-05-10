@@ -1,46 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>CubeCraft Games - Community & Forums</title>
+  <title>CubeCraft Games - Cộng đồng & Diễn đàn</title>
   <!-- Font Awesome & Google Fonts -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- External CSS -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/nav.css">
   <link rel="stylesheet" href="./css/login_register.css">
-  <!-- <link rel="stylesheet" href="./lib/all.min.css">
-  <link rel="stylesheet" href="./lib/all.min1.css"> -->
 </head>
 
 <body>
   <div class="forum-wrapper">
-    <!-- Header with logo + search -->
+    <!-- Header với logo + tìm kiếm -->
     <div class="cl forum-header">
       <div class="logo-area">
         <h1>CubeCraft Games</h1>
-        <p>The original Minecraft server network</p>
+        <p>Mạng lưới server Minecraft hàng đầu</p>
       </div>
       <div class="header-right">
         <div class="search-area">
           <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search forums...">
+          <input type="text" placeholder="Tìm kiếm trên diễn đàn...">
           <i class="fas fa-sliders-h" style="opacity: 0.6;"></i>
         </div>
         <div class="login-area">
-          <button onclick="openLogin()">LOGIN</button>
+          <button onclick="openLogin()">ĐĂNG NHẬP</button>
         </div>
         <div class="register-area">
-          <button onclick="openRegister()">REGISTER</button>
+          <button onclick="openRegister()">ĐĂNG KÝ</button>
         </div>
       </div>
     </div>
 
-     <!-- LOGIN -->
+    <!-- MODAL ĐĂNG NHẬP -->
     <div id="loginModal" class="modal">
         <div class="modal-box">
           <span class="close" onclick="closeModal()">&times;</span>
@@ -48,35 +45,35 @@
           <p>Vui lòng đăng nhập để tiếp tục. <span>Quên mật khẩu?</span></p>
           <form action="login">
             <label for="email">Email</label>
-            <input type="text" placeholder="Your@email.com">
+            <input type="text" placeholder="Email của bạn">
             <label for="password">Mật khẩu</label>
             <input type="password" placeholder="Mật khẩu của bạn">
             <button>Đăng nhập</button>
             <p style="margin-top: 10px; text-align: center;">Hoặc</p>
             <button style="background: #5865f2; margin-top: 10px;">Tiếp tục với Discord</button>
-            <p style="margin-top: 10px; text-align: center;">Chưa có tài khoản? <span>Đăng ký</span></p>
+            <p style="margin-top: 10px; text-align: center;">Chưa có tài khoản? <span>Đăng ký ngay</span></p>
           </form>
        </div>
     </div>
 
-    <!-- REGISTER -->
+    <!-- MODAL ĐĂNG KÝ -->
     <div id="registerModal" class="modal">
         <div class="modal-box register-link">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Đăng ký</h2>
-            <p>Bạn đã có tài khoản? <span>Đăng nhập</span></p>
+            <p>Đã có tài khoản? <span>Đăng nhập</span></p>
             <form action="register">
               <label for="email">Email</label>
-              <input type="email" placeholder="your@email.com">
+              <input type="email" placeholder="email@cuaban.com">
               <label for="username">Tên hiển thị</label>
-              <input type="text" placeholder="Nhập tên hiển thị của bạn">
+              <input type="text" placeholder="Nhập tên hiển thị">
               <label for="password">Mật khẩu</label>
               <input type="password" placeholder="Mật khẩu của bạn">
-              <label for="check-password">Xác nhận mẩ khẩu</label>
+              <label for="check-password">Xác nhận mật khẩu</label>
               <input type="password" placeholder="Nhập lại mật khẩu">
               <div style="display: flex; align-items: center; gap: 8px; margin-top: 12px;">
                 <input type="checkbox" id="terms" style="cursor: pointer; width: 16px; height: 16px;">
-                <label for="terms" style="font-size: 12px; margin: 0; cursor: pointer;">Tôi dồng ý với <a href="#"><span>Điều khoản dịch vụ</span></a> và <a href="#"><span>Chính sách bảo mật</span></a></label>
+                <label for="terms" style="font-size: 12px; margin: 0; cursor: pointer;">Tôi đồng ý với <a href="#"><span>Điều khoản dịch vụ</span></a> và <a href="#"><span>Chính sách bảo mật</span></a></label>
               </div>
               <button>Đăng ký</button>
               <p style="margin-top: 10px; text-align: center;">Hoặc</p>
@@ -85,19 +82,19 @@
         </div>
     </div>
 
-    <!-- Main grid: left content + right sidebar -->
+    <!-- Bố cục chính: nội dung bên trái + thanh bên phải -->
     <div class="forum-grid">
-      <!-- LEFT COLUMN: main feed -->
+      <!-- CỘT TRÁI: nội dung chính -->
       <div class="main-content">
 
-        <!-- Navigation Menu -->
+        <!-- Thanh điều hướng -->
         <nav class="nav-bar">
           <ul class="nav-menu">
-            <li class="active"><a class="nav-link" href="trang_chu.html">Home</a></li>
-            <li><a href="tro_choi.html">Play</a></li>
-            <li><a href="#">Leaderboards</a></li>
+            <li class="active"><a class="nav-link" href="trang_chu.html">Trang chủ</a></li>
+            <li><a href="tro_choi.html">Chơi ngay</a></li>
+            <li><a href="danh_muc.html">Danh mục</a></li>
             <li class="dropdown-item">
-              <a href="#">Rules</a>
+              <a href="#">Quy định</a>
               <ul class="dropdown-menu">
                 <li><a href="#">Server Rules</a></li>
                 <li><a href="#">Privacy Policy</a></li>
@@ -105,312 +102,305 @@
                 <li><a href="#">Terms of Service</a></li>
               </ul>
             </li>
-            <li><a href="#">Vote</a></li>
-            <li><a href="ho_tro.html">Support</a></li>
-            <li><a href="#">Store</a></li>
+            <li><a href="binh_chon.html">Bình chọn</a></li>
+            <li><a href="ho_tro.html">Hỗ trợ</a></li>
+            <li><a href="cua_hang.html">Cửa hàng</a></li>
           </ul>
         </nav>
 
-        <!-- Welcome Banner -->
+        <!-- Banner chào mừng -->
         <div class="welcome-card">
-          <h2>🎮 HERE TO PLAY MINECRAFT?</h2>
-          <p>Join and start playing on our Minecraft server now! Java & Bedrock crossplay, unique minigames, and a
-            vibrant community.</p>
+          <h2>🎮 ĐẾN ĐỂ CHƠI MINECRAFT?</h2>
+          <p>Tham gia và chơi ngay trên server Minecraft của chúng tôi! Kết nối chéo Java & Bedrock, các minigame độc đáo và một cộng đồng sôi động.</p>
           <button class="btn-join" id="joinServerBtn"><i class="fab fa-minecraft"></i> play.cubecraft.net</button>
         </div>
 
-        <!-- Gird block -->
+        <!-- Khối lưới tính năng -->
         <div class="feature-grid">
           <div class="grid-block">
             <div class="grid-item grid-big card card-1">
               <div class="entry-header">
-                <h3 style="font-size: 32px; margin-bottom: 12px;">Unique Games</h3>
-                <p>rubik_cube_man Friday at 11:43 PM</p>
+                <h3 style="font-size: 32px; margin-bottom: 12px;">Trò chơi độc đáo</h3>
+                <p>rubik_cube_man Thứ Sáu lúc 23:43</p>
               </div>
             </div>
 
             <div class="grid-item grid-small card card-2">
               <div class="entry-header">
-                <h3>CubeCap - March 2026</h3>
-                <p>Camezonda Mar 31, 2026</p> 
+                <h3>CubeCap - Tháng 3 năm 2026</h3>
+                <p>Camezonda 31 thg 3, 2026</p> 
               </div>
             </div>
 
             <div class="grid-item grid-small card card-3">
               <div class="entry-header">
-                <h3>🌸 Spring Event 2026!</h3>
-                <p>Unstrafeless Mar 26, 2026</p>
+                <h3>🌸 Sự kiện Mùa xuân 2026!</h3>
+                <p>Unstrafeless 26 thg 3, 2026</p>
               </div>
             </div>
 
             <div class="grid-item grid-small card card-4">
               <div class="entry-header">
-                <h3>🐈 Cat Bundle & Maps</h3>
-                <p>Clarky Mar 13, 2026</p>
+                <h3>🐈 Gói Mèo & Bản đồ mới</h3>
+                <p>Clarky 13 thg 3, 2026</p>
               </div>
             </div>
 
             <div class="grid-item grid-small card card-5">
               <div class="entry-header">
-                <h3>CubeCap - February 2026</h3>
-                <p>CubeCap - February 2026</p>
+                <h3>CubeCap - Tháng 2 năm 2026</h3>
+                <p>Camezonda 2 thg 3, 2026</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- LATEST CUBECAP & NEWS LIST -->
+        <!-- DANH SÁCH TIN TỨC & CUBECAP MỚI NHẤT -->
         <div class="cl news-list">
           <div class="section-header">
-            <i class="fas fa-newspaper"></i> Latest announcements
+            <i class="fas fa-newspaper"></i> Thông báo mới nhất
           </div>
           <div class="news-item">
-            <div class="news-title">CubeCap - March 2026</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i
-                  class="fas fa-calendar-alt"></i> Mar 31, 2026</span></div>
+            <div class="news-title">CubeCap - Tháng 3 năm 2026</div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i class="fas fa-calendar-alt"></i> 31 thg 3, 2026</span></div>
           </div>
           <div class="news-item">
-            <div class="news-title">CubeCap - February 2026</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i
-                  class="fas fa-calendar-alt"></i> Mar 2, 2026</span></div>
+            <div class="news-title">CubeCap - Tháng 2 năm 2026</div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i class="fas fa-calendar-alt"></i> 2 thg 3, 2026</span></div>
           </div>
           <div class="news-item">
-            <div class="news-title">Lunar Event 2026!</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i
-                  class="fas fa-calendar-alt"></i> Feb 9, 2026</span></div>
+            <div class="news-title">Sự kiện Trăng 2026!</div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i class="fas fa-calendar-alt"></i> 9 thg 2, 2026</span></div>
           </div>
           <div class="news-item">
-            <div class="news-title">CubeCap - January 2026</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i
-                  class="fas fa-calendar-alt"></i> Feb 1, 2026</span></div>
+            <div class="news-title">CubeCap - Tháng 1 năm 2026</div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i class="fas fa-calendar-alt"></i> 1 thg 2, 2026</span></div>
           </div>
         </div>
 
+        <!-- Phân trang -->
         <div class="pagination">
-          <a href="trang_chu.html" class="prev">◂ Prev</a>
+          <a href="trang_chu.html" class="prev">◂ Trước</a>
           <a href="trang_chu.html" class="page">1</a>
           <a href="trang_chu2.html" class="page active">2</a>
           <a href="trang_chu3.html" class="page">3</a>
           <a href="trang_chu4.html" class="page">4</a>
-          <a href="trang_chu3.html" class="next">Next ▸</a>
+          <a href="trang_chu3.html" class="next">Tiếp ▸</a>
         </div>
 
+        <!-- Danh sách bài viết trang 2 -->
         <div class="cl announcement-block">
           <div class="block-post">
             <h2 class="block-header">
               <a href="#">
-                An update on Minecraft versions and SkyBlock going forward
+                Cập nhật về phiên bản Minecraft và tương lai của SkyBlock
               </a>
               <span>
-                Jan 29, 2026
+                29 thg 1, 2026
               </span>
             </h2>
             <div class="block-image">
-              <img src="./img/200/201.png" alt="An update on Minecraft versions and SkyBlock going forward">
-              Hey everyone, today we have an important update regarding Hypixel SkyBlock and the versions of Minecraft that will be allowed to join the game going forward. This is something we’ve discussed before, and we are ready to take the plunge!
-              <a href="#">Continue reading...</a>
+              <img src="./img/200/201.png" alt="Cập nhật về phiên bản Minecraft và tương lai của SkyBlock">
+              Chào mọi người, hôm nay chúng tôi có một cập nhật quan trọng về Hypixel SkyBlock và các phiên bản Minecraft sẽ được phép tham gia trò chơi trong tương lai. Đây là điều chúng tôi đã thảo luận trước đây và chúng tôi sẵn sàng thực hiện bước chuyển mình này!
+              <a href="#">Đọc tiếp...</a>
             </div>
             <div class="block-footer">
-              <span>by Hypixel Team at 1:56 PM</span>
-              <span>300 Comments</span>
+              <span>bởi Hypixel Team lúc 13:56</span>
+              <span>300 bình luận</span>
             </div>
           </div>
 
           <div class="block-post">
             <h2 class="block-header">
               <a href="#">
-                Hypixel SkyBlock 0.24.1 - Swappable Pet Items, Garden Changes, & Bug Fixes
+                Hypixel SkyBlock 0.24.1 - Vật phẩm Thú cưng có thể hoán đổi, Thay đổi Vườn & Sửa lỗi
               </a>
               <span>
-                Jan 27, 2026
+                27 thg 1, 2026
               </span>
             </h2>
             <div class="block-image">
-              <img src="./img/200/202.png" alt="Hypixel SkyBlock 0.24.1 - Swappable Pet Items, Garden Changes, & Bug Fixes">
-              Hello! Today we are releasing Hypixel SkyBlock 0.24.1 which features Swappable Pet Items, some miscellaneous changes, and a ton of bug fixes. Keep reading for all of the details!
-              <a href="#">Continue reading...</a>
+              <img src="./img/200/202.png" alt="Hypixel SkyBlock 0.24.1 - Vật phẩm Thú cưng có thể hoán đổi, Thay đổi Vườn & Sửa lỗi">
+              Xin chào! Hôm nay chúng tôi phát hành Hypixel SkyBlock 0.24.1 với tính năng Vật phẩm Thú cưng có thể hoán đổi, một số thay đổi linh tinh và rất nhiều bản sửa lỗi. Đọc tiếp để biết chi tiết!
+              <a href="#">Đọc tiếp...</a>
             </div>
             <div class="block-footer">
-              <span>by Hypixel Team at 10:04 AM</span>
-              <span>885 Comments</span>
+              <span>bởi Hypixel Team lúc 10:04</span>
+              <span>885 bình luận</span>
             </div>
           </div>
 
           <div class="block-post">
             <h2 class="block-header">
               <a href="#">
-                Murder Mystery Update - Prefixes, Layout Editor, and more!
+                Cập nhật Murder Mystery - Tiền tố, Trình chỉnh sửa bố cục, và hơn thế nữa!
               </a>
               <span>
-                Jan 8, 2026
+                8 thg 1, 2026
               </span>
             </h2>
             <div class="block-image">
-              <img src="./img/200/203.png" alt="Murder Mystery Update - Prefixes, Layout Editor, and more!">
-              Hello! 
+              <img src="./img/200/203.png" alt="Cập nhật Murder Mystery - Tiền tố, Trình chỉnh sửa bố cục, và hơn thế nữa!">
+              Xin chào! 
               <br>
               <br>
-              Today we've got a sleuth of changes that we have rolled out to Murder Mystery. This includes a revamp to Emblems (they're now Prefixes), a layout editor, along with several quality of life changes that were requested by the community. Read on for all the information!
-              <a href="#">Continue reading...</a>
+              Hôm nay chúng tôi có một loạt thay đổi đã được triển khai cho Murder Mystery. Bao gồm cải tiến Emblems (nay là Prefixes), trình chỉnh sửa bố cục, cùng một số thay đổi về chất lượng cuộc sống theo yêu cầu của cộng đồng. Đọc tiếp để biết thêm thông tin!
+              <a href="#">Đọc tiếp...</a>
             </div>
             <div class="block-footer">
-              <span>by Hypixel Team at 11:47 AM</span>
-              <span>519 Comments</span>
+              <span>bởi Hypixel Team lúc 11:47</span>
+              <span>519 bình luận</span>
             </div>
           </div>
 
           <div class="block-post">
             <h2 class="block-header">
               <a href="#">
-                2025 Roundup - Generate your unique stats on Hypixel
+                Tổng kết 2025 - Tạo thống kê độc đáo của bạn trên Hypixel
               </a>
               <span>
-                Dec 29, 2025
+                29 thg 12, 2025
               </span>
             </h2>
             <div class="block-image">
-              <img src="./img/200/204.png" alt="2025 Roundup - Generate your unique stats on Hypixel">
-              Another year has already come and gone, and the Hypixel Team would like to wish everyone a Happy New Year! We're excited for the year to come!
+              <img src="./img/200/204.png" alt="Tổng kết 2025 - Tạo thống kê độc đáo của bạn trên Hypixel">
+              Một năm nữa đã qua đi, và Đội ngũ Hypixel xin gửi lời chúc Năm mới đến tất cả mọi người! Chúng tôi rất hào hứng cho năm sắp tới!
               <br>
               <br>
-              Here are some highlights for 2025 on Hypixel:
+              Dưới đây là một số điểm nổi bật của Hypixel trong năm 2025:
               <br>
               <br>
               <ul class="event-list">
                 <li>
-                  Released 3 major content updates to SkyBlock, including the long-awaited Foraging update using latest Minecraft versions
+                  Phát hành 3 bản cập nhật nội dung lớn cho SkyBlock, bao gồm bản cập nhật Foraging được chờ đợi từ lâu sử dụng phiên bản Minecraft mới nhất
                   <ul class="sub-event-list">
-                    <li>Check out our SkyBlock recap for 2025 here.</li>
+                    <li>Xem lại tổng kết SkyBlock năm 2025 tại đây.</li>
                   </ul>
                 </li>
-                <li>Released 11 major updates to existing minigames on the network</li>
-                <li>Released Disasters 1.0 into the Arcade Games lobby</li>
-                <li>Released various seasonal event updates throughout the year</li>
-                <li>Announced our major upcoming game, Ravengard!</li>
+                <li>Phát hành 11 bản cập nhật lớn cho các minigame hiện có trên mạng lưới</li>
+                <li>Phát hành Disasters 1.0 vào sảnh trò chơi Arcade</li>
+                <li>Phát hành nhiều bản cập nhật sự kiện theo mùa trong suốt năm</li>
+                <li>Công bố trò chơi lớn sắp ra mắt của chúng tôi, Ravengard!</li>
               </ul>
               <br>
-              Continue reading to generate your own 2025 roundup!
-              <a href="#">Continue reading...</a>
+              Đọc tiếp để tạo bản tổng kết năm 2025 của riêng bạn!
+              <a href="#">Đọc tiếp...</a>
             </div>
             <div class="block-footer">
-              <span>by Hypixel Team at 10:00 AM</span>
-              <span>798 Comments</span>
+              <span>bởi Hypixel Team lúc 10:00</span>
+              <span>798 bình luận</span>
             </div>
           </div>
 
           <div class="block-post">
             <h2 class="block-header">
               <a href="#">
-                Disasters v1.0 - Official Release
+                Disasters v1.0 - Phát hành chính thức
               </a>
               <span>
-                Dec 16, 2025
+                16 thg 12, 2025
               </span>
             </h2>
             <div class="block-image">
-              <img src="./img/200/205.png" alt="Disasters v1.0 - Official Release">
-              Hello!
+              <img src="./img/200/205.png" alt="Disasters v1.0 - Phát hành chính thức">
+              Xin chào!
               <br>
               <br>
-              Today we're releasing the 1.0 update for Disasters, featuring new maps, quality-of-life changes, and, of course, a bunch of new disasters!
+              Hôm nay chúng tôi phát hành bản cập nhật 1.0 cho Disasters, với các bản đồ mới, thay đổi chất lượng cuộc sống và tất nhiên là một loạt thảm họa mới!
               <br>
               <br>
               <span>Disasters v1.0</span>
               <br>
-              Disasters is now released! You can find it anytime in the Arcade lobby, where it will be replacing Dropper as a permanently featured minigame within Arcade's rotation.
+              Disasters hiện đã được phát hành! Bạn có thể tìm thấy trò chơi này bất cứ lúc nào trong sảnh Arcade, nơi nó sẽ thay thế Dropper làm minigame cố định trong vòng quay của Arcade.
               <br>
               <br>
-              <span>8 New Disasters!</span>
+              <span>8 Thảm họa mới!</span>
               <br>
-              This update adds 8 new disasters to the game, a list of which can be found below!
+              Bản cập nhật này bổ sung 8 thảm họa mới vào trò chơi, danh sách dưới đây!
               <ul class="event-list">
-                <li>Stampede</li>
-                <li>Solar Flare</li>
-                <li>TNT Rain</li>
-                <li>Fragile Ground</li>
-                <li>Nuke (Secondary Disaster)</li>
-                <li>Bat Swarm (Secondary Disaster)</li>
-                <li>Disco! (Secondary Disaster)</li>
-                <li>Hypixel Says! (Secondary Disaster)</li>
+                <li>Stampede (Đoàn thú chạy tán loạn)</li>
+                <li>Solar Flare (Bão mặt trời)</li>
+                <li>TNT Rain (Mưa TNT)</li>
+                <li>Fragile Ground (Mặt đất mong manh)</li>
+                <li>Nuke (Bom hạt nhân) - Thảm họa phụ</li>
+                <li>Bat Swarm (Đàn dơi) - Thảm họa phụ</li>
+                <li>Disco! - Thảm họa phụ</li>
+                <li>Hypixel Says! (Hypixel nói!) - Thảm họa phụ</li>
               </ul>
               <br>
-              Want to find out more about the update? Read on for more information!
-              <a href="#">Continue reading...</a>
+              Muốn biết thêm chi tiết về bản cập nhật? Đọc tiếp để biết thêm thông tin!
+              <a href="#">Đọc tiếp...</a>
             </div>
             <div class="block-footer">
-              <span>by Hypixel Team at 9:20 AM</span>
-              <span>325 Comments</span>
+              <span>bởi Hypixel Team lúc 9:20</span>
+              <span>325 bình luận</span>
             </div>
           </div>
         </div>
 
+        <!-- Phân trang thứ hai -->
         <div class="pagination">
-          <a href="../index.html" class="prev">◂ Prev</a>
-          <a href="../index.html" class="page">1</a>
-          <a href="./post2.html" class="page active">2</a>
-          <a href="./post3.html" class="page">3</a>
-          <a href="./post4.html" class="page">4</a>
-          <a href="./post3.html" class="next">Next ▸</a>
+          <a href="trang_chu.html" class="prev">◂ Trước</a>
+          <a href="trang_chu.html" class="page">1</a>
+          <a href="trang_chu2.html" class="page active">2</a>
+          <a href="trang_chu3.html" class="page">3</a>
+          <a href="trang_chu4.html" class="page">4</a>
+          <a href="trang_chu3.html" class="next">Tiếp ▸</a>
         </div>
       </div>
 
-
-      <!-- RIGHT SIDEBAR: all community widgets -->
+      <!-- THANH BÊN PHẢI: các widget cộng đồng -->
       <div class="sidebar">
-        <!-- Discord widget -->
+        <!-- Widget Discord -->
         <div class="widget">
           <div class="widget-title">DISCORD</div>
           <div class="widget-content">
             <div class="discord-stats">
-              <div style="font-weight: bold; margin: 6px 0;">Members Online</div>
-              <div style="font-size: 1.6rem; font-weight: 800;">1,247</div>
-              <div style="font-size: 0.75rem;">+ 3,200 online total</div>
+              <div style="font-weight: bold; margin: 6px 0;">Thành viên trực tuyến</div>
+              <div style="font-size: 1.6rem; font-weight: 800;">1.247</div>
+              <div style="font-size: 0.75rem;">+ Tổng 3.200 người online</div>
             </div>
-            <a href="#" class="discord-btn" id="discordBtn">Join our Discord</a>
+            <a href="#" class="discord-btn" id="discordBtn">Tham gia Discord của chúng tôi</a>
           </div>
         </div>
 
-        <!-- OUR TEAM -->
+        <!-- Widget ĐỘI NGŨ CỦA CHÚNG TÔI -->
         <div class="widget">
-          <div class="widget-title">OUR TEAM</div>
+          <div class="widget-title">ĐỘI NGŨ CỦA CHÚNG TÔI</div>
           <div class="widget-content">
             <div class="team-list">
               <div class="team-member">
-                <span>Hoang Duy Hung</span>
-                <span class="role-badge">Nguoi Viet Code</span>
+                <span>Hoàng Duy Hưng</span>
+                <span class="role-badge">Người viết code</span>
               </div>
               <div class="team-member">
-                <span>Nguyen Van Hiep</span>
-                <span class="role-badge">An Hai</span>
+                <span>Nguyễn Văn Hiệp</span>
+                <span class="role-badge">An Hải</span>
               </div>
               <div class="team-member">
-                <span>Ha Quang Tat Dat</span>
-                <span class="role-badge">An Hai</span>
+                <span>Hà Quang Tất Đạt</span>
+                <span class="role-badge">An Hải</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- TEAM ONLINE widget -->
+        <!-- Widget ĐỘI NGŨ TRỰC TUYẾN -->
         <div class="widget">
-          <div class="widget-title">TEAM ONLINE</div>
+          <div class="widget-title">ĐỘI NGŨ TRỰC TUYẾN</div>
           <div class="widget-content">
             <div class="team-list">
-              <div class="team-member"><span><span class="online-dot"></span> Fesa</span><span
-                  class="role-badge">Quality Assurance</span></div>
-              <div class="team-member"><span><span class="online-dot"></span> Daanfkyy</span><span
-                  class="role-badge">Mod</span></div>
-              <div class="team-member"><span><span class="online-dot"></span> CKelting</span><span
-                  class="role-badge">Welfare Admin</span></div>
-              <div class="team-member"><span><span class="online-dot"></span> AliWarrior</span><span
-                  class="role-badge">Helper</span></div>
+              <div class="team-member"><span><span class="online-dot"></span> Fesa</span><span class="role-badge">Đảm bảo chất lượng</span></div>
+              <div class="team-member"><span><span class="online-dot"></span> Daanfkyy</span><span class="role-badge">Điều hành viên</span></div>
+              <div class="team-member"><span><span class="online-dot"></span> CKelting</span><span class="role-badge">Quản trị phúc lợi</span></div>
+              <div class="team-member"><span><span class="online-dot"></span> AliWarrior</span><span class="role-badge">Trợ giúp</span></div>
             </div>
           </div>
         </div>
 
-        <!-- MEMBERS ONLINE -->
+        <!-- Widget THÀNH VIÊN TRỰC TUYẾN -->
         <div class="widget">
-          <div class="widget-title">MEMBERS ONLINE</div>
+          <div class="widget-title">THÀNH VIÊN TRỰC TUYẾN</div>
           <div class="widget-content">
             <div class="username-cloud">
               <span>x pmx 1</span> <span>muminek002</span> <span>xNqkkii</span> <span>BeastRudyy</span>
@@ -418,54 +408,52 @@
               <span>TruePenguin</span> <span>CKelting</span> <span>AliWarrior</span> <span>SrMuerto7w7</span>
             </div>
             <div class="total-stats">
-              <i class="fas fa-chart-line"></i> Total: 1,349 (members: 13, guests: 1,336)
+              <i class="fas fa-chart-line"></i> Tổng: 1.349 (thành viên: 13, khách: 1.336)
             </div>
           </div>
         </div>
 
-        <!-- server IP quick reference -->
+        <!-- Widget IP SERVER -->
         <div class="widget">
-          <div class="widget-title">JOIN NOW</div>
+          <div class="widget-title">THAM GIA NGAY</div>
           <div class="widget-content" style="text-align: center;">
-            <code
-              style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.cubecraft.net</code>
-            <p style="font-size: 0.7rem; margin-top: 12px;">Bedrock port: 19132 | Java 1.8-1.20+</p>
+            <code style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.cubecraft.net</code>
+            <p style="font-size: 0.7rem; margin-top: 12px;">Cổng Bedrock: 19132 | Java 1.8-1.20+</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Chân trang chính -->
   <footer class="footer">
     <div class="pageContent">
       <div class="block">
         <div class="block-container">
-          <h3>About us</h3>
-          <p>Founded in 2012, we're now one of the world's largest Minecraft Networks. Hosting fun and unique games like
-            SkyWars, Lucky Islands & EggWars!</p>
+          <h3>Về chúng tôi</h3>
+          <p>Được thành lập năm 2012, hiện là một trong những mạng lưới Minecraft lớn nhất thế giới. Chúng tôi tổ chức các trò chơi độc đáo và vui nhộn như SkyWars, Lucky Islands và EggWars!</p>
         </div>
       </div>
       <div class="block">
         <div class="block-container">
-          <h3> Useful Links</h3>
+          <h3>Liên kết hữu ích</h3>
           <ul style="list-style: none;">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Rules & Policies</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Manage Subscriptions</a></li>
-            <li><a href="#">Status</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Quy định & Chính sách</a></li>
+            <li><a href="#">Hỗ trợ</a></li>
+            <li><a href="#">Quản lý gói đăng ký</a></li>
+            <li><a href="#">Tình trạng máy chủ</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+            <li><a href="#">Điều khoản dịch vụ</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
           </ul>
         </div>
       </div>
       <div class="block login-area block-3">
         <div class="block-container">
-          <h3>CubeCraft Store</h3>
-          <p>We work very hard to bring you unique, originally created content. Purchasing ranks, CubeCraft Gold, and
-            SkyBlock Gems helps support us in making more, higher quality content.</p>
-          <button style="margin: 20px 0px;">Visit the store</button>
+          <h3>Cửa hàng CubeCraft</h3>
+          <p>Chúng tôi làm việc rất chăm chỉ để mang đến cho bạn những nội dung độc đáo và nguyên bản. Mua rank, CubeCraft Gold và SkyBlock Gems giúp hỗ trợ chúng tôi tạo ra nhiều nội dung chất lượng cao hơn.</p>
+          <button style="margin: 20px 0px;">Tới cửa hàng</button>
         </div>
         <div class="social">
           <i class="fa-brands fa-youtube"></i>
@@ -480,12 +468,16 @@
     </div>
   </footer>
 
+  <!-- Dòng ghi chú cuối -->
   <footer class="footer-note">
-    <i class="fas fa-cube"></i> CubeCraft Games — Community forums & server hub. Not an official Minecraft product.
+    <i class="fas fa-cube"></i> CubeCraft Games — Diễn đàn cộng đồng & trung tâm máy chủ. Không phải sản phẩm chính thức của Minecraft.
   </footer>
+
+  <!-- Nút cuộn trang -->
   <div class="scrollButtons">
     <button id="scrollUpBtn" title="Lên đầu trang">↑</button>
     <button id="scrollDownBtn" title="Xuống cuối trang">↓</button>
   </div>
   <script src="./js/script.js"></script>
 </body>
+</html>
