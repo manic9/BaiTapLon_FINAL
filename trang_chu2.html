@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>CubeCraft Games - Cộng đồng & Diễn đàn</title>
+  <title>NegateCraft - Cộng đồng & Diễn đàn</title>
   <!-- Font Awesome & Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -19,7 +19,7 @@
     <!-- Header với logo + tìm kiếm -->
     <div class="cl forum-header">
       <div class="logo-area">
-        <h1>CubeCraft Games</h1>
+        <h1>NegateCraft</h1>
         <p>Mạng lưới server Minecraft hàng đầu</p>
       </div>
       <div class="header-right">
@@ -112,7 +112,7 @@
         <div class="welcome-card">
           <h2>🎮 ĐẾN ĐỂ CHƠI MINECRAFT?</h2>
           <p>Tham gia và chơi ngay trên server Minecraft của chúng tôi! Kết nối chéo Java & Bedrock, các minigame độc đáo và một cộng đồng sôi động.</p>
-          <button class="btn-join" id="joinServerBtn"><i class="fab fa-minecraft"></i> play.cubecraft.net</button>
+          <button onclick="copyIP()" class="btn-join" id="joinServerBtn"><i class="fab fa-minecraft"></i> play.negatecraft.net</button>
         </div>
 
         <!-- Khối lưới tính năng -->
@@ -161,20 +161,20 @@
             <i class="fas fa-newspaper"></i> Thông báo mới nhất
           </div>
           <div class="news-item">
-            <div class="news-title">CubeCap - Tháng 3 năm 2026</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i class="fas fa-calendar-alt"></i> 31 thg 3, 2026</span></div>
+            <div class="news-title">Hypixel SkyBlock 0.24.3 - Abiphone Contact Bonanza, Littlefoot's Den, và hơn thế nữa!</div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Negate Team</span> <span><i class="fas fa-calendar-alt"></i> 31 thg 3, 2026</span></div>
           </div>
           <div class="news-item">
-            <div class="news-title">CubeCap - Tháng 2 năm 2026</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i class="fas fa-calendar-alt"></i> 2 thg 3, 2026</span></div>
+            <div class="news-title">Kỷ niệm 13 năm Hypixel + Sự kiện Phục sinh</div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Negate Team</span> <span><i class="fas fa-calendar-alt"></i> 30 thg 3, 2026</span></div>
           </div>
           <div class="news-item">
-            <div class="news-title">Sự kiện Trăng 2026!</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i class="fas fa-calendar-alt"></i> 9 thg 2, 2026</span></div>
+            <div class="news-title">Cập nhật Build Battle - Platinum Palette, Minecraft 1.21.9, và hơn thế nữa!</div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Negate Team</span> <span><i class="fas fa-calendar-alt"></i> 4 thg 3, 2026</span></div>
           </div>
           <div class="news-item">
-            <div class="news-title">CubeCap - Tháng 1 năm 2026</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Camezonda</span> <span><i class="fas fa-calendar-alt"></i> 1 thg 2, 2026</span></div>
+            <div class="news-title">Hypixel SkyBlock 0.24.2 - Cải tạo Hub, Minecraft mới nhất, Năm của Phù thủy, và hơn thế nữa!</div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Negate Team</span> <span><i class="fas fa-calendar-alt"></i> 24 thg 2, 2026</span></div>
           </div>
         </div>
 
@@ -183,9 +183,6 @@
           <a href="trang_chu.html" class="prev">◂ Trước</a>
           <a href="trang_chu.html" class="page">1</a>
           <a href="trang_chu2.html" class="page active">2</a>
-          <a href="trang_chu3.html" class="page">3</a>
-          <a href="trang_chu4.html" class="page">4</a>
-          <a href="trang_chu3.html" class="next">Tiếp ▸</a>
         </div>
 
         <!-- Danh sách bài viết trang 2 -->
@@ -205,7 +202,7 @@
               <a href="#">Đọc tiếp...</a>
             </div>
             <div class="block-footer">
-              <span>bởi Hypixel Team lúc 13:56</span>
+              <span>bởi Negate Team lúc 13:56</span>
               <span>300 bình luận</span>
             </div>
           </div>
@@ -225,7 +222,7 @@
               <a href="#">Đọc tiếp...</a>
             </div>
             <div class="block-footer">
-              <span>bởi Hypixel Team lúc 10:04</span>
+              <span>bởi Negate Team lúc 10:04</span>
               <span>885 bình luận</span>
             </div>
           </div>
@@ -248,7 +245,7 @@
               <a href="#">Đọc tiếp...</a>
             </div>
             <div class="block-footer">
-              <span>bởi Hypixel Team lúc 11:47</span>
+              <span>bởi Negate Team lúc 11:47</span>
               <span>519 bình luận</span>
             </div>
           </div>
@@ -287,7 +284,7 @@
               <a href="#">Đọc tiếp...</a>
             </div>
             <div class="block-footer">
-              <span>bởi Hypixel Team lúc 10:00</span>
+              <span>bởi Negate Team lúc 10:00</span>
               <span>798 bình luận</span>
             </div>
           </div>
@@ -332,7 +329,7 @@
               <a href="#">Đọc tiếp...</a>
             </div>
             <div class="block-footer">
-              <span>bởi Hypixel Team lúc 9:20</span>
+              <span>bởi Negate Team lúc 9:20</span>
               <span>325 bình luận</span>
             </div>
           </div>
@@ -343,9 +340,6 @@
           <a href="trang_chu.html" class="prev">◂ Trước</a>
           <a href="trang_chu.html" class="page">1</a>
           <a href="trang_chu2.html" class="page active">2</a>
-          <a href="trang_chu3.html" class="page">3</a>
-          <a href="trang_chu4.html" class="page">4</a>
-          <a href="trang_chu3.html" class="next">Tiếp ▸</a>
         </div>
       </div>
 
@@ -360,7 +354,7 @@
               <div style="font-size: 1.6rem; font-weight: 800;">1.247</div>
               <div style="font-size: 0.75rem;">+ Tổng 3.200 người online</div>
             </div>
-            <a href="#" class="discord-btn" id="discordBtn">Tham gia Discord của chúng tôi</a>
+            <a href="https://discord.gg/P8kcQZNn" class="discord-btn" id="discordBtn">Tham gia Discord của chúng tôi</a>
           </div>
         </div>
 
@@ -417,7 +411,7 @@
         <div class="widget">
           <div class="widget-title">THAM GIA NGAY</div>
           <div class="widget-content" style="text-align: center;">
-            <code style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.cubecraft.net</code>
+            <code style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.NegateCraft.net</code>
             <p style="font-size: 0.7rem; margin-top: 12px;">Cổng Bedrock: 19132 | Java 1.8-1.20+</p>
           </div>
         </div>
@@ -451,8 +445,8 @@
       </div>
       <div class="block login-area block-3">
         <div class="block-container">
-          <h3>Cửa hàng CubeCraft</h3>
-          <p>Chúng tôi làm việc rất chăm chỉ để mang đến cho bạn những nội dung độc đáo và nguyên bản. Mua rank, CubeCraft Gold và SkyBlock Gems giúp hỗ trợ chúng tôi tạo ra nhiều nội dung chất lượng cao hơn.</p>
+          <h3>Cửa hàng NegateCraft</h3>
+          <p>Chúng tôi làm việc rất chăm chỉ để mang đến cho bạn những nội dung độc đáo và nguyên bản. Mua rank, NegateCraft Gold và SkyBlock Gems giúp hỗ trợ chúng tôi tạo ra nhiều nội dung chất lượng cao hơn.</p>
           <button style="margin: 20px 0px;">Tới cửa hàng</button>
         </div>
         <div class="social">
@@ -470,7 +464,7 @@
 
   <!-- Dòng ghi chú cuối -->
   <footer class="footer-note">
-    <i class="fas fa-cube"></i> CubeCraft Games — Diễn đàn cộng đồng & trung tâm máy chủ. Không phải sản phẩm chính thức của Minecraft.
+    <i class="fas fa-cube"></i> NegateCraft — Diễn đàn cộng đồng & trung tâm máy chủ. Không phải sản phẩm chính thức của Minecraft.
   </footer>
 
   <!-- Nút cuộn trang -->

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>CubeCraft Games - Cộng đồng & Diễn đàn</title>
+  <title>NegateCraft Games - Cộng đồng & Diễn đàn</title>
   <!-- Font Awesome & Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -21,7 +21,7 @@
     <!-- Header với logo + tìm kiếm -->
     <div class="forum-header">
       <div class="logo-area">
-        <h1>CubeCraft Games</h1>
+        <h1>NegateCraft Games</h1>
         <p>Mạng lưới server Minecraft hàng đầu</p>
       </div>
       <div class="header-right">
@@ -47,9 +47,9 @@
           <p>Vui lòng đăng nhập để tiếp tục. <span>Quên mật khẩu?</span></p>
           <form action="login">
             <label for="email">Email</label>
-            <input type="text" placeholder="Email của bạn">
+            <input type="email" placeholder="Email của bạn" id="email" name="email" required>
             <label for="password">Mật khẩu</label>
-            <input type="password" placeholder="Mật khẩu của bạn">
+            <input type="password" placeholder="Mật khẩu của bạn" id="password" name="password" required>
             <button>Đăng nhập</button>
             <p style="margin-top: 10px; text-align: center;">Hoặc</p>
             <button style="background: #5865f2; margin-top: 10px;">Tiếp tục với Discord</button>
@@ -93,7 +93,7 @@
           <ul class="nav-menu">
             <li><a href="trang_chu.html">Trang chủ</a></li>
             <li><a href="tro_choi.html">Chơi ngay</a></li>
-            <li><a href="danh_muc.html">Danh mục/a></li>
+            <li><a href="danh_muc.html">Danh mục</a></li>
             <li class="dropdown-item">
               <a href="#">Quy định</a>
               <ul class="dropdown-menu">
@@ -117,19 +117,19 @@
               <p>Nếu bạn có bất kỳ câu hỏi hoặc sự cố nào liên quan đến thanh toán, <span class="text-color">hãy gửi yêu cầu hỗ trợ tại đây</span>, chúng tôi sẽ phản hồi nhanh nhất có thể.</p>
 
               <h2>Phát hiện lỗi?</h2>
-              <p>Chúng tôi làm việc cực kỳ nghiêm túc để loại bỏ mọi lỗi bạn có thể gặp trên LemonCloud. Bạn chỉ cần điền một biểu mẫu đơn giản và chúng tôi sẽ cập nhật tiến độ cho bạn.</p>
+              <p>Chúng tôi làm việc cực kỳ nghiêm túc để loại bỏ mọi lỗi bạn có thể gặp trên NegateCraft. Bạn chỉ cần điền một biểu mẫu đơn giản và chúng tôi sẽ cập nhật tiến độ cho bạn.</p>
               <p><span class="text-color">Bấm vào đây</span> để gửi báo cáo lỗi!</p>
 
               <h2>Các vấn đề khác?</h2>
               <p>Nếu bạn bị kẹt trong game, muốn kháng cáo lệnh cấm, thắc mắc về quy định hoặc bất kỳ yêu cầu thông thường nào khác, hãy tạo yêu cầu hỗ trợ trên server Discord của chúng tôi.</p>
               <p>Bạn có thể tham gia Discord của chúng tôi bằng cách bấm <span class="text-color">vào đây</span>. Điều này sẽ đưa bạn thẳng đến kênh hỗ trợ.</p>
               <p>Để tham gia Discord, bạn phải từ 13 tuổi trở lên, vì chúng tôi tuân thủ Điều khoản dịch vụ của Discord. Nếu bạn dưới độ tuổi này, vui lòng có người lớn đi cùng khi sử dụng dịch vụ.</p>
-              <p style="padding-bottom: 0;">Bạn cũng có thể gửi email đến support@lemoncloud.org nếu không thể sử dụng các phương thức trên.</p>
+              <p style="padding-bottom: 0;">Bạn cũng có thể gửi email đến hoangduy9761@gmail.com nếu không thể sử dụng các phương thức trên.</p>
 
               <hr>
 
               <h2>Kháng cáo lệnh cấm Discord</h2>
-              <p>Gửi email đến support@lemoncloud.org nếu bạn muốn kháng cáo một hình phạt trên Discord.</p>
+              <p>Gửi email đến hoangduy9761@gmail.com nếu bạn muốn kháng cáo một hình phạt trên Discord.</p>
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@
               <div style="font-size: 1.6rem; font-weight: 800;">1.247</div>
               <div style="font-size: 0.75rem;">+ Tổng 3.200 người online</div>
             </div>
-            <a href="#" class="discord-btn" id="discordBtn">Tham gia Discord của chúng tôi</a>
+            <a href="https://discord.gg/P8kcQZNn" class="discord-btn" id="discordBtn">Tham gia Discord của chúng tôi</a>
           </div>
         </div>
 
@@ -203,7 +203,7 @@
         <div class="widget">
           <div class="widget-title">THAM GIA NGAY</div>
           <div class="widget-content" style="text-align: center;">
-            <code style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.cubecraft.net</code>
+            <code style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.NegateCraft.net</code>
             <p style="font-size: 0.7rem; margin-top: 12px;">Cổng Bedrock: 19132 | Java 1.8-1.20+</p>
           </div>
         </div>
@@ -237,8 +237,8 @@
       </div>
       <div class="block login-area block-3">
         <div class="block-container">
-          <h3>Cửa hàng CubeCraft</h3>
-          <p>Chúng tôi làm việc rất chăm chỉ để mang đến cho bạn những nội dung độc đáo và nguyên bản. Mua rank, CubeCraft Gold và SkyBlock Gems giúp hỗ trợ chúng tôi tạo ra nhiều nội dung chất lượng cao hơn.</p>
+          <h3>Cửa hàng NegateCraft</h3>
+          <p>Chúng tôi làm việc rất chăm chỉ để mang đến cho bạn những nội dung độc đáo và nguyên bản. Mua rank, NegateCraft Gold và SkyBlock Gems giúp hỗ trợ chúng tôi tạo ra nhiều nội dung chất lượng cao hơn.</p>
           <button style="margin: 20px 0px;">Tới cửa hàng</button>
         </div>
         <div class="social">
@@ -256,7 +256,7 @@
 
   <!-- Dòng ghi chú cuối -->
   <footer class="footer-note">
-    <i class="fas fa-cube"></i> CubeCraft Games — Diễn đàn cộng đồng & trung tâm máy chủ. Không phải sản phẩm chính thức của Minecraft.
+    <i class="fas fa-cube"></i> NegateCraft Games — Diễn đàn cộng đồng & trung tâm máy chủ. Không phải sản phẩm chính thức của Minecraft.
   </footer>
 
   <!-- Nút cuộn trang -->

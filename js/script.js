@@ -13,7 +13,7 @@ function closeModal() {
 }
 
 function copyIP() {
-    navigator.clipboard.writeText("play.hdhcraft.net");
+    navigator.clipboard.writeText("play.negatecraft.net");
     alert("Đã copy IP!");
 }
 // Simple interactive feedback for buttons

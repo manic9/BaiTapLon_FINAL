@@ -1,0 +1,46 @@
+.playerwall {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 200px);
+    grid-gap: 10px;
+    height: 500px;
+    height: fit-content;
+}
+
+.playerwall li {
+    list-style: none;
+    box-sizing: border-box;
+    height: 200px;
+    border: 0;
+    margin-bottom: 0;
+    background: #c2eaf9;
+    border-radius: 10px;
+    padding: 25px 10px;
+}
+
+.tooltipstered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltipstered img {
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+.username {
+    height: 26px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Raleway, sans-serif;
+    color: #FFC376;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerwall li:hover {
+    opacity: 0.8;
+}
