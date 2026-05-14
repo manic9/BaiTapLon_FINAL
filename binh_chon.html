@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NegateCraft Games - Bình chọn</title>
+  <!-- Font Awesome & Google Fonts -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/login_register.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/vote.css">
+  <link rel="stylesheet" href="./css/support.css">
+</head>
+
+<body>
+  <div class="forum-wrapper">
+    <!-- Header với logo + tìm kiếm -->
+    <div class="forum-header">
+      <div class="logo-area">
+        <h1>NegateCraft Games</h1>
+        <p>Mạng lưới server Minecraft hàng đầu</p>
+      </div>
+      <div class="header-right">
+        <div class="search-area">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Tìm kiếm trên diễn đàn...">
+          <i class="fas fa-sliders-h" style="opacity: 0.6;"></i>
+        </div>
+        <div class="login-area">
+          <button onclick="openLogin()">ĐĂNG NHẬP</button>
+        </div>
+        <div class="register-area">
+          <button onclick="openRegister()">ĐĂNG KÝ</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL ĐĂNG NHẬP -->
+    <div id="loginModal" class="modal">
+      <div class="modal-box">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Đăng nhập</h2>
+        <p>Vui lòng đăng nhập để tiếp tục. <span>Quên mật khẩu?</span></p>
+        <form action="login">
+          <label for="email">Email</label>
+          <input type="text" placeholder="Email của bạn">
+          <label for="password">Mật khẩu</label>
+          <input type="password" placeholder="Mật khẩu của bạn">
+          <button>Đăng nhập</button>
+          <p style="margin-top: 10px; text-align: center;">Hoặc</p>
+          <button style="background: #5865f2; margin-top: 10px;">Tiếp tục với Discord</button>
+          <p style="margin-top: 10px; text-align: center;">Chưa có tài khoản? <span>Đăng ký ngay</span></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- MODAL ĐĂNG KÝ -->
+    <div id="registerModal" class="modal">
+      <div class="modal-box register-link">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Đăng ký</h2>
+        <p>Đã có tài khoản? <span>Đăng nhập</span></p>
+        <form action="register">
+          <label for="email">Email</label>
+          <input type="email" placeholder="email@cuaban.com">
+          <label for="username">Tên hiển thị</label>
+          <input type="text" placeholder="Nhập tên hiển thị">
+          <label for="password">Mật khẩu</label>
+          <input type="password" placeholder="Mật khẩu của bạn">
+          <label for="check-password">Xác nhận mật khẩu</label>
+          <input type="password" placeholder="Nhập lại mật khẩu">
+          <div style="display: flex; align-items: center; gap: 8px; margin-top: 12px;">
+            <input type="checkbox" id="terms" style="cursor: pointer; width: 16px; height: 16px;">
+            <label for="terms" style="font-size: 12px; margin: 0; cursor: pointer;">Tôi đồng ý với <a
+                href="#"><span>Điều khoản dịch vụ</span></a> và <a href="#"><span>Chính sách bảo mật</span></a></label>
+          </div>
+          <button>Đăng ký</button>
+          <p style="margin-top: 10px; text-align: center;">Hoặc</p>
+          <button style="background: #5865f2; margin-top: 10px;">Tiếp tục với Discord</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bố cục chính: nội dung bên trái + thanh bên phải -->
+    <div class="forum-grid">
+      <!-- CỘT TRÁI: nội dung chính -->
+      <div class="main-content">
+        <!-- Thanh điều hướng -->
+        <nav class="nav-bar">
+          <ul class="nav-menu">
+            <li><a href="trang_chu.html">Trang chủ</a></li>
+            <li><a href="tro_choi.html">Chơi ngay</a></li>
+            <li><a href="danh_muc.html">Danh mục</a></li>
+            <li class="dropdown-item">
+              <a href="#">Quy định</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Server Rules</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">SkyBlock Rules</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </li>
+            <li class="active"><a class="nav-link" href="binh_chon.html">Bình chọn</a></li>
+            <li><a href="ho_tro.html">Hỗ trợ</a></li>
+            <li><a href="cua_hang.html">Cửa hàng</a></li>
+          </ul>
+        </nav>
+
+        <div class="announcement-block">
+          <div class="page-content">
+            <h2>Bình chọn NegateCraft</h2>
+            <div class="card-body">
+              <div class="vote-card">
+                <h2><i class="fas fa-star-of-life"></i> Đánh giá trải nghiệm</h2>
+                <div class="sub">Bạn cảm thấy thế nào về sản phẩm / dịch vụ của chúng tôi?</div>
+
+                <!-- 5 nút bình chọn -->
+                <div class="rating-buttons">
+                  <button class="rate-btn" data-value="1" data-label="Rất tệ"><i class="fas fa-angry"></i> Rất
+                    tệ</button>
+                  <button class="rate-btn" data-value="2" data-label="Tệ"><i class="fas fa-frown"></i> Tệ</button>
+                  <button class="rate-btn" data-value="3" data-label="Bình thường"><i class="fas fa-meh"></i>
+                    Bình thường</button>
+                  <button class="rate-btn" data-value="4" data-label="Tốt"><i class="fas fa-smile"></i> Tốt</button>
+                  <button class="rate-btn" data-value="5" data-label="Rất tốt"><i class="fas fa-grin-stars"></i> Rất
+                    tốt</button>
+                </div>
+
+                <!-- Khu vực comment (ban đầu ẩn) -->
+                <div class="comment-area">
+                  <div id="commentBox" class="comment-box">
+                    <label for="userComment"><i class="fas fa-comment-dots"></i> Nhận xét của bạn (không bắt buộc, nhưng
+                      rất có giá trị)</label>
+                    <textarea id="userComment" rows="3" placeholder="Chia sẻ cảm nhận chi tiết hơn..."></textarea>
+                    <div class="action-buttons">
+                      <button class="btn-cancel" id="cancelCommentBtn">Huỷ</button>
+                      <button class="btn-submit" id="submitVoteBtn">Gửi đánh giá</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="feedbackMessage" class="feedback">
+                  ✨ Hãy chọn một mức độ và để lại nhận xét nhé!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- THANH BÊN PHẢI: các widget cộng đồng -->
+      <div class="sidebar">
+        <!-- Widget Discord -->
+        <div class="widget">
+          <div class="widget-title">DISCORD</div>
+          <div class="widget-content">
+            <div class="discord-stats">
+              <div style="font-weight: bold; margin: 6px 0;">Thành viên trực tuyến</div>
+              <div style="font-size: 1.6rem; font-weight: 800;">1.247</div>
+              <div style="font-size: 0.75rem;">+ Tổng 3.200 người online</div>
+            </div>
+            <a href="https://discord.gg/P8kcQZNn" class="discord-btn" id="discordBtn">Tham gia Discord của chúng tôi</a>
+          </div>
+        </div>
+
+        <!-- Widget ĐỘI NGŨ CỦA CHÚNG TÔI -->
+        <div class="widget">
+          <div class="widget-title">ĐỘI NGŨ CỦA CHÚNG TÔI</div>
+          <div class="widget-content">
+            <div class="team-list">
+              <div class="team-member">
+                <span>Hoàng Duy Hưng</span>
+                <span class="role-badge">Lập trình viên</span>
+              </div>
+              <div class="team-member">
+                <span>Nguyễn Văn Hiệp</span>
+                <span class="role-badge">Thành viên</span>
+              </div>
+              <div class="team-member">
+                <span>Hà Quang Tất Đạt</span>
+                <span class="role-badge">Trưởng nhóm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Widget ĐỘI NGŨ TRỰC TUYẾN -->
+        <div class="widget">
+          <div class="widget-title">ĐỘI NGŨ TRỰC TUYẾN</div>
+          <div class="widget-content">
+            <div class="team-list">
+              <div class="team-member"><span><span class="online-dot"></span>Hoàng Duy Hưng</span><span class="role-badge">Đảm
+                  bảo chất lượng</span></div>
+              <div class="team-member"><span><span class="online-dot"></span>Hoàng Duy Hưng</span><span
+                  class="role-badge">Điều hành viên</span></div>
+              <div class="team-member"><span><span class="online-dot"></span>Nguyễn Văn Hiệp</span><span
+                  class="role-badge">Quản trị phúc lợi</span></div>
+              <div class="team-member"><span><span class="online-dot"></span>Hà Quang Tất Đạt</span><span
+                  class="role-badge">Trợ giúp</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Widget THÀNH VIÊN TRỰC TUYẾN -->
+        <div class="widget">
+          <div class="widget-title">THÀNH VIÊN TRỰC TUYẾN</div>
+          <div class="widget-content">
+            <div class="username-cloud">
+              <span>x pmx 1</span> <span>muminek002</span> <span>xNqkkii</span> <span>BeastRudyy</span>
+              <span>Fesa</span> <span>Loskol</span> <span>DaanH</span> <span>Daanfkyy</span>
+              <span>TruePenguin</span> <span>CKelting</span> <span>AliWarrior</span> <span>SrMuerto7w7</span>
+            </div>
+            <div class="total-stats">
+              <i class="fas fa-chart-line"></i> Tổng: 1.349 (thành viên: 13, khách: 1.336)
+            </div>
+          </div>
+        </div>
+
+        <!-- Widget IP SERVER -->
+        <div class="widget">
+          <div class="widget-title">THAM GIA NGAY</div>
+          <div class="widget-content" style="text-align: center;">
+            <code
+              style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.NegateCraft.net</code>
+            <p style="font-size: 0.7rem; margin-top: 12px;">Cổng Bedrock: 19132 | Java 1.8-1.20+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chân trang chính -->
+  <footer class="footer">
+    <div class="pageContent">
+      <div class="block">
+        <div class="block-container">
+          <h3>Về chúng tôi</h3>
+          <p>Được thành lập năm 2012, hiện là một trong những mạng lưới Minecraft lớn nhất thế giới. Chúng tôi tổ chức
+            các trò chơi độc đáo và vui nhộn như SkyWars, Lucky Islands và EggWars!</p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-container">
+          <h3>Liên kết hữu ích</h3>
+          <ul style="list-style: none;">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Quy định & Chính sách</a></li>
+            <li><a href="#">Hỗ trợ</a></li>
+            <li><a href="#">Quản lý gói đăng ký</a></li>
+            <li><a href="#">Tình trạng máy chủ</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+            <li><a href="#">Điều khoản dịch vụ</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="block login-area block-3">
+        <div class="block-container">
+          <h3>Cửa hàng NegateCraft</h3>
+          <p>Chúng tôi làm việc rất chăm chỉ để mang đến cho bạn những nội dung độc đáo và nguyên bản. Mua rank,
+            NegateCraft Gold và SkyBlock Gems giúp hỗ trợ chúng tôi tạo ra nhiều nội dung chất lượng cao hơn.</p>
+          <button style="margin: 20px 0px;">Tới cửa hàng</button>
+        </div>
+        <div class="social">
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-discord"></i>
+          <i class="fa-brands fa-threads"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dòng ghi chú cuối -->
+  <footer class="footer-note">
+    <i class="fas fa-cube"></i> NegateCraft Games — Diễn đàn cộng đồng & trung tâm máy chủ. Không phải sản phẩm chính
+    thức của Minecraft.
+  </footer>
+
+  <!-- Nút cuộn trang -->
+  <div class="scrollButtons">
+    <button id="scrollUpBtn" title="Lên đầu trang">↑</button>
+    <button id="scrollDownBtn" title="Xuống cuối trang">↓</button>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

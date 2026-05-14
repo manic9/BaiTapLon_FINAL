@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>NegateCraft - Cộng đồng & Diễn đàn</title>
   <!-- Font Awesome & Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- External CSS -->
   <link rel="stylesheet" href="./css/main.css">
@@ -19,7 +20,7 @@
     <!-- Header với logo + tìm kiếm -->
     <div class="forum-header">
       <div class="logo-area">
-        <h1>NegateCraft</h1>
+        <h1>NegateCraft Games</h1>
         <p>Mạng lưới server Minecraft hàng đầu</p>
       </div>
       <div class="header-right">
@@ -39,47 +40,48 @@
 
     <!-- MODAL ĐĂNG NHẬP -->
     <div id="loginModal" class="modal">
-        <div class="modal-box">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <h2>Đăng nhập</h2>
-          <p>Vui lòng đăng nhập để tiếp tục. <span>Quên mật khẩu?</span></p>
-          <form action="login">
-            <label for="email">Email</label>
-            <input type="text" placeholder="Email của bạn">
-            <label for="password">Mật khẩu</label>
-            <input type="password" placeholder="Mật khẩu của bạn">
-            <button>Đăng nhập</button>
-            <p style="margin-top: 10px; text-align: center;">Hoặc</p>
-            <button style="background: #5865f2; margin-top: 10px;">Tiếp tục với Discord</button>
-            <p style="margin-top: 10px; text-align: center;">Chưa có tài khoản? <span>Đăng ký ngay</span></p>
-          </form>
-       </div>
+      <div class="modal-box">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Đăng nhập</h2>
+        <p>Vui lòng đăng nhập để tiếp tục. <span>Quên mật khẩu?</span></p>
+        <form action="login">
+          <label for="email">Email</label>
+          <input type="text" placeholder="Email của bạn">
+          <label for="password">Mật khẩu</label>
+          <input type="password" placeholder="Mật khẩu của bạn">
+          <button>Đăng nhập</button>
+          <p style="margin-top: 10px; text-align: center;">Hoặc</p>
+          <button style="background: #5865f2; margin-top: 10px;">Tiếp tục với Discord</button>
+          <p style="margin-top: 10px; text-align: center;">Chưa có tài khoản? <span>Đăng ký ngay</span></p>
+        </form>
+      </div>
     </div>
 
     <!-- MODAL ĐĂNG KÝ -->
     <div id="registerModal" class="modal">
-        <div class="modal-box register-link">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Đăng ký</h2>
-            <p>Đã có tài khoản? <span>Đăng nhập</span></p>
-            <form action="register">
-              <label for="email">Email</label>
-              <input type="email" placeholder="email@cuaban.com">
-              <label for="username">Tên hiển thị</label>
-              <input type="text" placeholder="Nhập tên hiển thị">
-              <label for="password">Mật khẩu</label>
-              <input type="password" placeholder="Mật khẩu của bạn">
-              <label for="check-password">Xác nhận mật khẩu</label>
-              <input type="password" placeholder="Nhập lại mật khẩu">
-              <div style="display: flex; align-items: center; gap: 8px; margin-top: 12px;">
-                <input type="checkbox" id="terms" style="cursor: pointer; width: 16px; height: 16px;">
-                <label for="terms" style="font-size: 12px; margin: 0; cursor: pointer;">Tôi đồng ý với <a href="#"><span>Điều khoản dịch vụ</span></a> và <a href="#"><span>Chính sách bảo mật</span></a></label>
-              </div>
-              <button>Đăng ký</button>
-              <p style="margin-top: 10px; text-align: center;">Hoặc</p>
-              <button style="background: #5865f2; margin-top: 10px;">Tiếp tục với Discord</button>
-            </form>
-        </div>
+      <div class="modal-box register-link">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Đăng ký</h2>
+        <p>Đã có tài khoản? <span>Đăng nhập</span></p>
+        <form action="register">
+          <label for="email">Email</label>
+          <input type="email" placeholder="email@cuaban.com">
+          <label for="username">Tên hiển thị</label>
+          <input type="text" placeholder="Nhập tên hiển thị">
+          <label for="password">Mật khẩu</label>
+          <input type="password" placeholder="Mật khẩu của bạn">
+          <label for="check-password">Xác nhận mật khẩu</label>
+          <input type="password" placeholder="Nhập lại mật khẩu">
+          <div style="display: flex; align-items: center; gap: 8px; margin-top: 12px;">
+            <input type="checkbox" id="terms" style="cursor: pointer; width: 16px; height: 16px;">
+            <label for="terms" style="font-size: 12px; margin: 0; cursor: pointer;">Tôi đồng ý với <a
+                href="#"><span>Điều khoản dịch vụ</span></a> và <a href="#"><span>Chính sách bảo mật</span></a></label>
+          </div>
+          <button>Đăng ký</button>
+          <p style="margin-top: 10px; text-align: center;">Hoặc</p>
+          <button style="background: #5865f2; margin-top: 10px;">Tiếp tục với Discord</button>
+        </form>
+      </div>
     </div>
 
     <!-- Bố cục chính: nội dung bên trái + thanh bên phải -->
@@ -111,8 +113,10 @@
         <!-- Banner chào mừng -->
         <div class="welcome-card">
           <h2>🎮 ĐẾN ĐỂ CHƠI MINECRAFT?</h2>
-          <p>Tham gia và chơi ngay trên server Minecraft của chúng tôi! Kết nối chéo Java & Bedrock, các minigame độc đáo và một cộng đồng sôi động.</p>
-          <button onclick="copyIP()" class="btn-join" id="joinServerBtn"><i class="fab fa-minecraft"></i> play.negatecraft.net</button>
+          <p>Tham gia và chơi ngay trên server Minecraft của chúng tôi! Kết nối chéo Java & Bedrock, các minigame độc
+            đáo và một cộng đồng sôi động.</p>
+          <button onclick="copyIP()" class="btn-join" id="joinServerBtn"><i class="fab fa-minecraft"></i>
+            play.negatecraft.net</button>
         </div>
 
         <!-- Khối lưới tính năng -->
@@ -128,7 +132,7 @@
             <div class="grid-item grid-small card card-2">
               <div class="entry-header">
                 <h3>CubeCap - Tháng 3 năm 2026</h3>
-                <p>Camezonda 31 thg 3, 2026</p> 
+                <p>Camezonda 31 thg 3, 2026</p>
               </div>
             </div>
 
@@ -161,20 +165,26 @@
             <i class="fas fa-newspaper"></i> Thông báo mới nhất
           </div>
           <div class="news-item">
-            <div class="news-title">Hypixel SkyBlock 0.24.3 - Abiphone Contact Bonanza, Littlefoot's Den, và hơn thế nữa!</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Negate Team</span> <span><i class="fas fa-calendar-alt"></i> 31 thg 3, 2026</span></div>
+            <div class="news-title">Negate SkyBlock 0.24.3 - Abiphone Contact Bonanza, Littlefoot's Den, và hơn thế nữa!
+            </div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Negate Team</span> <span><i
+                  class="fas fa-calendar-alt"></i> 31 thg 3, 2026</span></div>
           </div>
           <div class="news-item">
-            <div class="news-title">Kỷ niệm 13 năm Hypixel + Sự kiện Phục sinh</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Negate Team</span> <span><i class="fas fa-calendar-alt"></i> 30 thg 3, 2026</span></div>
+            <div class="news-title">Kỷ niệm 13 năm Negate + Sự kiện Phục sinh</div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Negate Team</span> <span><i
+                  class="fas fa-calendar-alt"></i> 30 thg 3, 2026</span></div>
           </div>
           <div class="news-item">
             <div class="news-title">Cập nhật Build Battle - Platinum Palette, Minecraft 1.21.9, và hơn thế nữa!</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Negate Team</span> <span><i class="fas fa-calendar-alt"></i> 4 thg 3, 2026</span></div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Negate Team</span> <span><i
+                  class="fas fa-calendar-alt"></i> 4 thg 3, 2026</span></div>
           </div>
           <div class="news-item">
-            <div class="news-title">Hypixel SkyBlock 0.24.2 - Cải tạo Hub, Minecraft mới nhất, Năm của Phù thủy, và hơn thế nữa!</div>
-            <div class="news-meta"><span><i class="fas fa-user"></i> Negate Team</span> <span><i class="fas fa-calendar-alt"></i> 24 thg 2, 2026</span></div>
+            <div class="news-title">Negate SkyBlock 0.24.2 - Cải tạo Hub, Minecraft mới nhất, Năm của Phù thủy, và hơn
+              thế nữa!</div>
+            <div class="news-meta"><span><i class="fas fa-user"></i> Negate Team</span> <span><i
+                  class="fas fa-calendar-alt"></i> 24 thg 2, 2026</span></div>
           </div>
         </div>
 
@@ -190,16 +200,18 @@
           <div class="block-post">
             <h2 class="block-header">
               <a href="#">
-                Hypixel SkyBlock 0.24.3 - Abiphone Contact Bonanza, Littlefoot's Den, và hơn thế nữa!
+                Negate SkyBlock 0.24.3 - Abiphone Contact Bonanza, Littlefoot's Den, và hơn thế nữa!
               </a>
               <span>
                 31 thg 3, 2026
               </span>
             </h2>
             <div class="block-image">
-              <img src="./img/100/101.png" alt="Hypixel SkyBlock 0.24.3 - Abiphone Contact Bonanza, Littlefoot's Den, và hơn thế nữa!">
-              Xin chào! Hôm nay chúng tôi phát hành Hypixel SkyBlock 0.24.3, bản cập nhật bao gồm một loạt các Abiphone Contact mới, sự bổ sung của Littlefoot's Den và nhiều thay đổi cho Jerry Island, chính thức ngừng sử dụng Reforge Anvils, và hơn thế nữa! Đọc tiếp để biết chi tiết!
-              <a href="#">Đọc tiếp...</a>
+              <img src="./img/100/101.png"
+                alt="Negate SkyBlock 0.24.3 - Abiphone Contact Bonanza, Littlefoot's Den, và hơn thế nữa!">
+              Xin chào! Hôm nay chúng tôi phát hành Negate SkyBlock 0.24.3, bản cập nhật bao gồm một loạt các Abiphone
+              Contact mới, sự bổ sung của Littlefoot's Den và nhiều thay đổi cho Jerry Island, chính thức ngừng sử dụng
+              Reforge Anvils, và hơn thế nữa!
             </div>
             <div class="block-footer">
               <span>bởi Negate Team lúc 10:02</span>
@@ -210,15 +222,16 @@
           <div class="block-post">
             <h2 class="block-header">
               <a href="#">
-                Kỷ niệm 13 năm Hypixel + Sự kiện Phục sinh
+                Kỷ niệm 13 năm Negate + Sự kiện Phục sinh
               </a>
               <span>
                 30 thg 3, 2026
               </span>
             </h2>
             <div class="block-image">
-              <img src="./img/100/102.png" alt="Kỷ niệm 13 năm Hypixel + Sự kiện Phục sinh">
-              Chúng ta sắp bước sang năm thứ 13 của Hypixel Network! Để kỷ niệm, chúng tôi có một bộ thẻ Bingo mới cùng với tất cả các hoạt động thường lệ của Sự kiện Phục sinh. Dưới đây là tóm tắt nhanh:
+              <img src="./img/100/102.png" alt="Kỷ niệm 13 năm Negate + Sự kiện Phục sinh">
+              Chúng ta sắp bước sang năm thứ 13 của Negate Network! Để kỷ niệm, chúng tôi có một bộ thẻ Bingo mới cùng
+              với tất cả các hoạt động thường lệ của Sự kiện Phục sinh. Dưới đây là tóm tắt nhanh:
               <ul class="event-list">
                 <li>GIẢM GIÁ PHỤC SINH - Giảm lên đến 85%!</li>
                 <li>Thẻ Bingo mới</li>
@@ -227,7 +240,6 @@
                 <li>Săn trứng trong Sảnh chính mới</li>
                 <li>Đồ trang trí cửa hàng sự kiện mới</li>
               </ul>
-              <a href="#">Đọc tiếp...</a>
             </div>
             <div class="block-footer">
               <span>bởi Negate Team lúc 13:20</span>
@@ -245,12 +257,14 @@
               </span>
             </h2>
             <div class="block-image">
-              <img src="./img/100/103.png" alt="Cập nhật Build Battle - Platinum Palette, Minecraft 1.21.9, và hơn thế nữa!">
-              Xin chào! 
+              <img src="./img/100/103.png"
+                alt="Cập nhật Build Battle - Platinum Palette, Minecraft 1.21.9, và hơn thế nữa!">
+              Xin chào!
               <br>
               <br>
-              Hôm nay chúng tôi có một bản cập nhật nhỏ cho Build Battle, với PLATINUM PALETTE (một sự cải tiến nhỏ cho hệ thống Emblems). Chúng tôi cũng đã nâng phiên bản tối thiểu lên Minecraft 1.21.9 cho các chế độ chính của Build Battle và thực hiện một số thay đổi về chất lượng cuộc sống.
-              <a href="#">Đọc tiếp...</a>
+              Hôm nay chúng tôi có một bản cập nhật nhỏ cho Build Battle, với PLATINUM PALETTE (một sự cải tiến nhỏ cho
+              hệ thống Emblems). Chúng tôi cũng đã nâng phiên bản tối thiểu lên Minecraft 1.21.9 cho các chế độ chính
+              của Build Battle và thực hiện một số thay đổi về chất lượng cuộc sống.
             </div>
             <div class="block-footer">
               <span>bởi Negate Team lúc 10:10</span>
@@ -261,16 +275,20 @@
           <div class="block-post">
             <h2 class="block-header">
               <a href="#">
-                Hypixel SkyBlock 0.24.2 - Cải tạo Hub, Minecraft mới nhất, Năm của Phù thủy, và hơn thế nữa!
+                Negate SkyBlock 0.24.2 - Cải tạo Hub, Minecraft mới nhất, Năm của Phù thủy, và hơn thế nữa!
               </a>
               <span>
                 24 thg 2, 2026
               </span>
             </h2>
             <div class="block-image">
-              <img src="./img/100/104.png" alt="Hypixel SkyBlock 0.24.2 - Cải tạo Hub, Minecraft mới nhất, Năm của Phù thủy, và hơn thế nữa!">
-              Xin chào! Bắt đầu từ hôm nay, khi tham gia Hypixel SkyBlock bạn sẽ cần có phiên bản Minecraft 1.21.9 trở lên. Đây là một bước tiến lớn cho trò chơi và chúng tôi rất hào hứng với những gì sắp tới trong tương lai gần của Hypixel SkyBlock! Bản cập nhật này cũng bao gồm cải tạo The Hub, sự kiện Năm của Phù thủy mới, một Bảo tàng được tái cấu trúc, Đồng hồ RNG cho Frozen Corpses, bản cập nhật cuối cho Stranded, và nhiều hơn nữa. Đọc tiếp để biết tất cả chi tiết!
-              <a href="#">Đọc tiếp...</a>
+              <img src="./img/100/104.png"
+                alt="Negate SkyBlock 0.24.2 - Cải tạo Hub, Minecraft mới nhất, Năm của Phù thủy, và hơn thế nữa!">
+              Xin chào! Bắt đầu từ hôm nay, khi tham gia Negate SkyBlock bạn sẽ cần có phiên bản Minecraft 1.21.9 trở
+              lên. Đây là một bước tiến lớn cho trò chơi và chúng tôi rất hào hứng với những gì sắp tới trong tương lai
+              gần của Negate SkyBlock! Bản cập nhật này cũng bao gồm cải tạo The Hub, sự kiện Năm của Phù thủy mới, một
+              Bảo tàng được tái cấu trúc, Đồng hồ RNG cho Frozen Corpses, bản cập nhật cuối cho Stranded, và nhiều hơn
+              nữa.
             </div>
             <div class="block-footer">
               <span>bởi Negate Team lúc 12:54</span>
@@ -289,8 +307,8 @@
             </h2>
             <div class="block-image">
               <img src="./img/100/105.png" alt="Chúc mừng Năm mới Âm lịch - Năm con Ngựa!">
-              Chúc mừng năm mới! Tối nay đánh dấu sự khởi đầu của Năm con Ngựa Lửa. Chúng tôi đã thêm một số bản đồ và trang phục mới vào nhiều trò chơi để chào mừng! Đọc tiếp để biết thêm chi tiết.
-              <a href="#">Đọc tiếp...</a>
+              Chúc mừng năm mới! Tối nay đánh dấu sự khởi đầu của Năm con Ngựa Lửa. Chúng tôi đã thêm một số bản đồ và
+              trang phục mới vào nhiều trò chơi để chào mừng!
             </div>
             <div class="block-footer">
               <span>bởi Negate Team lúc 9:24</span>
@@ -329,15 +347,15 @@
             <div class="team-list">
               <div class="team-member">
                 <span>Hoàng Duy Hưng</span>
-                <span class="role-badge">Người viết code</span>
+                <span class="role-badge">Lập trình viên</span>
               </div>
               <div class="team-member">
                 <span>Nguyễn Văn Hiệp</span>
-                <span class="role-badge">An Hải</span>
+                <span class="role-badge">Thành viên</span>
               </div>
               <div class="team-member">
                 <span>Hà Quang Tất Đạt</span>
-                <span class="role-badge">An Hải</span>
+                <span class="role-badge">Trưởng nhóm</span>
               </div>
             </div>
           </div>
@@ -348,10 +366,15 @@
           <div class="widget-title">ĐỘI NGŨ TRỰC TUYẾN</div>
           <div class="widget-content">
             <div class="team-list">
-              <div class="team-member"><span><span class="online-dot"></span> Fesa</span><span class="role-badge">Đảm bảo chất lượng</span></div>
-              <div class="team-member"><span><span class="online-dot"></span> Daanfkyy</span><span class="role-badge">Điều hành viên</span></div>
-              <div class="team-member"><span><span class="online-dot"></span> CKelting</span><span class="role-badge">Quản trị phúc lợi</span></div>
-              <div class="team-member"><span><span class="online-dot"></span> AliWarrior</span><span class="role-badge">Trợ giúp</span></div>
+              <div class="team-member"><span><span class="online-dot"></span>Hoàng Duy Hưng</span><span
+                  class="role-badge">Đảm
+                  bảo chất lượng</span></div>
+              <div class="team-member"><span><span class="online-dot"></span>Hoàng Duy Hưng</span><span
+                  class="role-badge">Điều hành viên</span></div>
+              <div class="team-member"><span><span class="online-dot"></span>Nguyễn Văn Hiệp</span><span
+                  class="role-badge">Quản trị phúc lợi</span></div>
+              <div class="team-member"><span><span class="online-dot"></span>Hà Quang Tất Đạt</span><span
+                  class="role-badge">Trợ giúp</span></div>
             </div>
           </div>
         </div>
@@ -375,7 +398,8 @@
         <div class="widget">
           <div class="widget-title">THAM GIA NGAY</div>
           <div class="widget-content" style="text-align: center;">
-            <code style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.NegateCraft.net</code>
+            <code
+              style="background:#F0F4FC; padding: 8px 12px; border-radius: 32px; display:inline-block; font-weight:600;">play.NegateCraft.net</code>
             <p style="font-size: 0.7rem; margin-top: 12px;">Cổng Bedrock: 19132 | Java 1.8-1.20+</p>
           </div>
         </div>
@@ -389,7 +413,8 @@
       <div class="block">
         <div class="block-container">
           <h3>Về chúng tôi</h3>
-          <p>Được thành lập năm 2012, hiện là một trong những mạng lưới Minecraft lớn nhất thế giới. Chúng tôi tổ chức các trò chơi độc đáo và vui nhộn như SkyWars, Lucky Islands và EggWars!</p>
+          <p>Được thành lập năm 2012, hiện là một trong những mạng lưới Minecraft lớn nhất thế giới. Chúng tôi tổ chức
+            các trò chơi độc đáo và vui nhộn như SkyWars, Lucky Islands và EggWars!</p>
         </div>
       </div>
       <div class="block">
@@ -410,7 +435,8 @@
       <div class="block login-area block-3">
         <div class="block-container">
           <h3>Cửa hàng NegateCraft</h3>
-          <p>Chúng tôi làm việc rất chăm chỉ để mang đến cho bạn những nội dung độc đáo và nguyên bản. Mua rank, NegateCraft Gold và SkyBlock Gems giúp hỗ trợ chúng tôi tạo ra nhiều nội dung chất lượng cao hơn.</p>
+          <p>Chúng tôi làm việc rất chăm chỉ để mang đến cho bạn những nội dung độc đáo và nguyên bản. Mua rank,
+            NegateCraft Gold và SkyBlock Gems giúp hỗ trợ chúng tôi tạo ra nhiều nội dung chất lượng cao hơn.</p>
           <button style="margin: 20px 0px;">Tới cửa hàng</button>
         </div>
         <div class="social">
@@ -428,7 +454,8 @@
 
   <!-- Dòng ghi chú cuối -->
   <footer class="footer-note">
-    <i class="fas fa-cube"></i> NegateCraft — Diễn đàn cộng đồng & trung tâm máy chủ. Không phải sản phẩm chính thức của Minecraft.
+    <i class="fas fa-cube"></i> NegateCraft — Diễn đàn cộng đồng & trung tâm máy chủ. Không phải sản phẩm chính thức của
+    Minecraft.
   </footer>
 
   <!-- Nút cuộn trang -->
@@ -438,4 +465,5 @@
   </div>
   <script src="./js/script.js"></script>
 </body>
+
 </html>
