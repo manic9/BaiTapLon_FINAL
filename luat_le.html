@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>NegateCraft Games - Bình chọn</title>
+  <title>NegateCraft Games - Cộng đồng & Diễn đàn</title>
   <!-- Font Awesome & Google Fonts -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap">
@@ -13,8 +13,9 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/login_register.css">
   <link rel="stylesheet" href="./css/nav.css">
-  <link rel="stylesheet" href="./css/vote.css">
-  <link rel="stylesheet" href="./css/support.css">
+  <link rel="stylesheet" href="./css/play.css">
+  <link rel="stylesheet" href="./css/cua_hang.css">
+  <link rel="stylesheet" href="./css/rules.css">
 </head>
 
 <body>
@@ -96,8 +97,8 @@
             <li><a href="trang_chu.html">Trang chủ</a></li>
             <li><a href="tham_gia.html">Tham gia</a></li>
             <li><a href="danh_muc.html">Danh mục</a></li>
-            <li class="dropdown-item">
-              <a href="luat_le.html">Quy định</a>
+            <li class="dropdown-item active">
+              <a class="nav-link" href="luat_le.html">Quy định</a>
               <ul class="dropdown-menu">
                 <li><a href="luat_le.html">Quy tắc máy chủ</a></li>
                 <li><a href="luat_le.html">Chính sách bảo mật</a></li>
@@ -105,7 +106,7 @@
                 <li><a href="luat_le.html">Điều khoản dịch vụ</a></li>
               </ul>
             </li>
-            <li class="active"><a class="nav-link" href="binh_chon.html">Bình chọn</a></li>
+            <li><a href="binh_chon.html">Bình chọn</a></li>
             <li><a href="ho_tro.html">Hỗ trợ</a></li>
             <li><a href="cua_hang.html">Cửa hàng</a></li>
           </ul>
@@ -113,40 +114,159 @@
 
         <div class="announcement-block">
           <div class="page-content">
-            <h2>Bình chọn NegateCraft</h2>
             <div class="card-body">
-              <div class="vote-card">
-                <h2><i class="fas fa-star-of-life"></i> Đánh giá trải nghiệm</h2>
-                <div class="sub">Bạn cảm thấy thế nào về sản phẩm / dịch vụ của chúng tôi?</div>
-
-                <!-- 5 nút bình chọn -->
-                <div class="rating-buttons">
-                  <button class="rate-btn" data-value="1" data-label="Rất tệ"><i class="fas fa-angry"></i> Rất
-                    tệ</button>
-                  <button class="rate-btn" data-value="2" data-label="Tệ"><i class="fas fa-frown"></i> Tệ</button>
-                  <button class="rate-btn" data-value="3" data-label="Bình thường"><i class="fas fa-meh"></i>
-                    Bình thường</button>
-                  <button class="rate-btn" data-value="4" data-label="Tốt"><i class="fas fa-smile"></i> Tốt</button>
-                  <button class="rate-btn" data-value="5" data-label="Rất tốt"><i class="fas fa-grin-stars"></i> Rất
-                    tốt</button>
+              <div class="rules-container">
+                <!-- HEADER màu #b2e3f4, nền trắng tổng thể -->
+                <div class="rules-header">
+                  <h1>
+                    <span>📜</span> Quy định NegateCraft
+                  </h1>
+                  <div class="last-updated">📅 Cập nhật lần cuối: 15/05/2026 | Áp dụng toàn bộ hệ thống server</div>
                 </div>
 
-                <!-- Khu vực comment (ban đầu ẩn) -->
-                <div class="comment-area">
-                  <div id="commentBox" class="comment-box">
-                    <label for="userComment"><i class="fas fa-comment-dots"></i> Nhận xét của bạn (không bắt buộc, nhưng
-                      rất có giá trị)</label>
-                    <textarea id="userComment" rows="3" placeholder="Chia sẻ cảm nhận chi tiết hơn..."></textarea>
-                    <div class="action-buttons">
-                      <button class="btn-cancel" id="cancelCommentBtn">Huỷ</button>
-                      <button class="btn-submit" id="submitVoteBtn">Gửi đánh giá</button>
+                <!-- 1. Ứng xử -->
+                <div class="rule-category">
+                  <div class="cat-header"><span>💬</span> 1. Quy tắc ứng xử & chat</div>
+                  <div class="rule-list">
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text"><strong>Văn minh, lịch sự</strong> – Không chửi thề, công kích, phân biệt
+                        vùng miền, dân tộc. <span class="punishment-note">⚠️ mute 1h-7d</span></div>
+                    </div>
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text"><strong>Cấm spam, quảng cáo</strong> – Không gửi IP/Discord server khác,
+                        link lạ, tin nhắn lặp. <span class="punishment-note">🚫 ban 7-30d</span></div>
+                    </div>
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text"><strong>Giả mạo staff, thành viên nổi bật</strong> bị xử lý nặng.</div>
                     </div>
                   </div>
                 </div>
 
-                <div id="feedbackMessage" class="feedback">
-                  ✨ Hãy chọn một mức độ và để lại nhận xét nhé!
+                <!-- 2. Fair-play -->
+                <div class="rule-category">
+                  <div class="cat-header"><span>⚔️</span> 2. Chống hack & Fair-play</div>
+                  <div class="rule-list">
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text"><strong>Tuyệt đối không dùng client hack</strong> (killaura, fly, speed,
+                        xray, bhop). <span class="punishment-note">❌ ban vĩnh viễn</span></div>
+                    </div>
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text"><strong>Macro, autoclicker, bot</strong> đều bị coi là gian lận. <span
+                          class="punishment-note">🔨 ban 30d ~ perm</span></div>
+                    </div>
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text"><strong>Khai thác lỗi game (exploit)</strong> – báo ngay cho staff, không
+                        lợi dụng. <span class="punishment-note">rollback + ban</span></div>
+                    </div>
+                  </div>
                 </div>
+
+                <!-- 3. SkyBlock Rules -->
+                <div class="rule-category">
+                  <div class="cat-header"><span>🏝️</span> 3. SkyBlock riêng</div>
+                  <div class="rule-list">
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text"><strong>Không lừa đảo giao dịch</strong> (scam, đổi đồ ảo). <span
+                          class="punishment-note">💰 hoàn trả + ban</span></div>
+                    </div>
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text"><strong>Không xây máy lag server</strong> (redstone clock quá nhanh, quá
+                        nhiều vật thể).</div>
+                    </div>
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text"><strong>Không phá hoại đảo người khác</strong> nếu chưa được đồng ý.</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 4. MiniGame -->
+                <div class="rule-category">
+                  <div class="cat-header"><span>🎲</span> 4. MiniGame (Build Battle, Mega Walls, TNT Run, Sheep Wars...)
+                  </div>
+                  <div class="rule-list">
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text"><strong>Không cố tình thua / team-up bất hợp lệ</strong> trong chế độ xếp
+                        hạng.</div>
+                    </div>
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text"><strong>Build Battle:</strong> Không xây nội dung 18+, sao chép công trình
+                        người khác. <span class="punishment-note">🏗️ 0 điểm + cảnh cáo</span></div>
+                    </div>
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text"><strong>TNT Run, TNT Tag:</strong> Không dùng hack chạy nhanh/fly.</div>
+                    </div>
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text"><strong>Sheep Wars, Mega Walls:</strong> Không abuse lỗi ném không giới
+                        hạn, không spawnkill quá đà.</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 5. Tài khoản -->
+                <div class="rule-category">
+                  <div class="cat-header"><span>🔐</span> 5. Tài khoản & giao dịch</div>
+                  <div class="rule-list">
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text">Mỗi người chỉ nên có <strong>1 tài khoản chính</strong>, alt dùng né lệnh
+                        cấm sẽ bị ban toàn bộ.</div>
+                    </div>
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text"><strong>Mua bán vật phẩm/rank bằng tiền thật ngoài cửa hàng</strong> là vi
+                        phạm. <span class="punishment-note">khoá tài khoản</span></div>
+                    </div>
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text">Chargeback / gian lận thanh toán → ban vĩnh viễn + thu hồi rank.</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 6. Báo cáo -->
+                <div class="rule-category">
+                  <div class="cat-header"><span>📢</span> 6. Cách báo cáo vi phạm</div>
+                  <div class="rule-list">
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text">Dùng lệnh <strong>/report (tên) (lý do)</strong> hoặc tạo ticket trong
+                        Discord hỗ trợ.</div>
+                    </div>
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text">Cung cấp bằng chứng (video, ảnh chụp) giúp xử lý nhanh hơn.</div>
+                    </div>
+                    <div class="rule-item">
+                      <div class="rule-bullet">•</div>
+                      <div class="rule-text">Staff có quyền điều chỉnh mức phạt dựa trên mức độ vi phạm.</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="important-box">
+                  <p>🎯 <strong>Nguyên tắc vàng:</strong> Chơi fair, tôn trọng người khác, giữ môi trường NegateCraft
+                    lành mạnh.</p>
+                  <button class="discord-rule-btn" onclick="window.open('https://discord.gg/P8kcQZNn','_blank')">💬
+                    Tham gia Discord</button>
+                </div>
+
+                <footer>
+                  NegateCraft Games có thể thay đổi, bổ sung quy định bất kỳ lúc nào. Việc tiếp tục chơi đồng nghĩa với
+                  việc bạn chấp nhận toàn bộ nội dung.
+                </footer>
               </div>
             </div>
           </div>
@@ -194,7 +314,8 @@
           <div class="widget-title">ĐỘI NGŨ TRỰC TUYẾN</div>
           <div class="widget-content">
             <div class="team-list">
-              <div class="team-member"><span><span class="online-dot"></span>Hoàng Duy Hưng</span><span class="role-badge">Đảm
+              <div class="team-member"><span><span class="online-dot"></span>Hoàng Duy Hưng</span><span
+                  class="role-badge">Đảm
                   bảo chất lượng</span></div>
               <div class="team-member"><span><span class="online-dot"></span>Hoàng Duy Hưng</span><span
                   class="role-badge">Điều hành viên</span></div>
