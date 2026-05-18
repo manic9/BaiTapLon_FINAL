@@ -7,7 +7,7 @@
     border: 1px solid #E9EDF2;
     width: 1044px;
     height: 80px;
-    z-index: 50;
+    z-index: 0;
     box-sizing: content-box;
 }
 
@@ -20,6 +20,7 @@
     padding: 0;
     height: 100%;
     position: relative;
+    z-index: 1;
 }
 
 .nav-menu .active .nav-link {
